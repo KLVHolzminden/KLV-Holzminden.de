@@ -1,0 +1,3255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD><TITLE>Bestenliste 2024</TITLE>
+
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+
+<style type="text/css">
+
+body{ width: 770px;}
+
+table.body{ width: 770px; border: 0px;}
+
+td.blGrund{ BACKGROUND: white; FONT-FAMILY: Arial, Helvetia, Sans-Serif;
+
+FONT-SIZE: 13px; PADDING-LEFT: 0px; COLOR: black; }
+
+td.KopfZ1{ FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 24px;
+
+FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-ALIGN: center;
+
+Border-TOP: 1px solid black; BORDER-BOTTOM: 1px solid black; COLOR: black; PADDING: 0px; }
+
+td.KopfZ2{ font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal;
+
+font-weight: bold; text-align: left; border-top: 1px solid black; border-bottom: 1px solid black;
+
+color: black; padding-top: 8px; padding-bottom: 8px; width: 600px; }
+
+td.Stand{ font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal;
+
+font-weight: bold; text-align: right; border-top: 1px solid black; border-bottom: 1px solid black;
+
+color: black; padding-top: 0px; padding-bottom: 0px; width: 150px; }
+
+td.FussZ{ font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal;
+
+font-weight: bold; TEXT-ALIGN: center; border-top: 1px solid black;
+
+border-bottom: 1px solid black; padding-top: 5px; width: 770px; }
+
+td.Legende{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal;
+
+TEXT-ALIGN: left; padding-top: 0px; width: 770px; }
+
+td.AklZ{ font-family: Arial, Helvetia, sans-serif; font-size: 18px; font-style: normal;
+
+font-weight: bold; text-align: left; border-top: 1px solid black; border-bottom: 1px solid black;
+
+color: black; padding-top: 5px; padding-bottom: 5px; height: 10px; witdh: 600px; }
+
+p.Wettb{ font-family: Arial, Helvetica, sans-serif; font-size: 14px;
+
+font-style: normal; font-weight: bold; text-align: left; padding-top: 0px; padding-bottom: 0px;
+
+color: black; width: 230px; }
+
+.blWbName{ font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal;
+
+font-weight: bold; TEXT-ALIGN: left; padding: 0px; width: 230px;
+
+padding-top: 11px; padding-bottom:  5px; }
+
+.blMkDiszi{ font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal;
+
+font-weight: bold; TEXT-ALIGN: left; padding-bottom: 0px; padding: 5px; width: 650px; }
+
+.blAklText{ font-family: Arial, Helvetica, sans-serif; font-size: 9px
+
+FONT-STYLE: normal; TEXT-ALIGN: left; padding: 0px; width: 90px; }
+
+.blSpace{ font-family: Arial, Helvetica, sans-serif; font-size: 11px
+
+FONT-STYLE: normal; TEXT-ALIGN: left; padding: 0px; width: 3px; }
+
+.blFrei_Info{ font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+
+FONT-STYLE: normal; TEXT-ALIGN: left; padding: 0px; width: 10px; }
+
+.blInfo{ font-family: Arial, Helvetica, sans-serif; color: red; font-size: 12px;
+
+font-weight: bold; TEXT-ALIGN: left; padding: 0px; width: 75px; }
+
+.blZurueck{ font-family: Arial, Helvetica, sans-serif; color: blue; font-size: 13px;
+
+font-weight: bold; TEXT-ALIGN: right; padding: 0px; width: 770px; }
+
+.blLink1{ font-family: Arial, Helvetica, sans-serif; color: blue; font-size: 12px;
+
+font-weight: bold; TEXT-ALIGN: left; padding: 0px; width: 95px; }
+
+.blLink2{ font-family: Arial, Helvetica, sans-serif; color: blue; font-size: 12px;
+
+font-weight: bold; TEXT-ALIGN: left; padding: 0px; width: 95px; }
+
+.blLink3{ font-family: Arial, Helvetica, sans-serif; color: blue; font-size: 12px;
+
+font-weight: bold; TEXT-ALIGN: left; padding: 0px; width: 95px; }
+
+.blLink4{ font-family: Arial, Helvetica, sans-serif; color: blue; font-size: 12px;
+
+font-weight: bold; TEXT-ALIGN: left; padding: 0px; width: 95px; }
+
+.blLink5{ font-family: Arial, Helvetica, sans-serif; color: blue; font-size: 12px;
+
+font-weight: bold; TEXT-ALIGN: left; padding: 0px; width: 95px; }
+
+.blLink6{ font-family: Arial, Helvetica, sans-serif; color: blue; font-size: 12px;
+
+font-weight: bold; TEXT-ALIGN: left; padding: 0px; width: 95px; }
+
+.blAthlNrw{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+FONT-STYLE: normal; TEXT-ALIGN: right; padding: 0px; width: 35px; }
+
+.blAthlNrFw{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+FONT-STYLE: normal; TEXT-ALIGN: right; padding: 0px; width: 7px; }
+
+.blLeistungw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+FONT-STYLE: normal; TEXT-ALIGN: left; padding: 0px; width: 50px; }
+
+.blLeistungw354{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+FONT-STYLE: normal; TEXT-ALIGN: left; padding: 0px; width: 75px; }
+
+.blBemerkungw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+FONT-STYLE: normal; font-weight: bold; TEXT-ALIGN: left; padding: 0px; width: 50px; }
+
+.blWindw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: right; WIDTH: 25px; }
+
+.blNamew{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 5px; width: 215px; }
+
+.blJGw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: center; padding-left: 0px; width: 30px; }
+
+.blVereinw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 4px; width: 205px; }
+
+.blOrtw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 135px; }
+
+.blDatumw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: right; padding-left: 2px; width: 40px; }
+
+.blAthlNrg{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+FONT-STYLE: normal; TEXT-ALIGN: right; padding: 0px; width: 35px; }
+
+td.blAthlNrg{ background-color: #DDDDDD; }
+
+.blAthlNrFg{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+FONT-STYLE: normal; TEXT-ALIGN: right; padding: 0px; width: 7px; }
+
+td.blAthlNrFg{ background-color: #DDDDDD; }
+
+.blLeistungg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: left; padding: 0px; width: 50px; }
+
+td.blLeistungg{ background-color: #DDDDDD; }
+
+.blLeistungg354{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: left; padding: 0px; width: 75px; }
+
+td.blLeistungg354{ background-color: #DDDDDD; }
+
+.blBemerkungg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; font-weight: bold; TEXT-ALIGN: left; padding: 0px; width: 50px; }
+
+td.blBemerkungg{ background-color: #DDDDDD; }
+
+.blWindg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: right; width: 25px; }
+
+td.blWindg{ background-color: #DDDDDD; }
+
+.blNameg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 5px; width: 215px; }
+
+td.blNameg{ background-color: #DDDDDD; }
+
+.blJGg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: center; padding-left: 0px; width: 30px; }
+
+td.blJGg{ background-color: #DDDDDD; }
+
+.blVereing{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 4px; width: 205px; }
+
+td.blVereing{ background-color: #DDDDDD; }
+
+.blOrtg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 135px; }
+
+td.blOrtg{ background-color: #DDDDDD; }
+
+.blDatumg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: right; padding-left: 2px; width: 40px; }
+
+td.blDatumg{ background-color: #DDDDDD; }
+
+.blStMaTnw{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 602px; }
+
+.blStMaTndw{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 479px; }
+
+.blStMaTndfw{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 156px; }
+
+.blStMaTndg{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 479px; }
+
+td.blStMaTndg{ background-color: #DDDDDD; }
+
+.blStMaTndfg{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 156px; }
+
+td.blStMaTndfg{ background-color: #DDDDDD; }
+
+.blStMaTng{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 602px; }
+
+td.blStMaTng{ background-color: #DDDDDD; }
+
+.blStMaTnFreiw{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; width: 95px; }
+
+.blStMaTnFreig{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; width: 95px; }
+
+td.blStMaTnFreig{ background-color: #DDDDDD; }
+
+.blDatumMkT2w{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: left; width: 40px; }
+
+.blDatumMkT2g{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+
+font-style: normal; TEXT-ALIGN: left; width: 40px; }
+
+td.blDatumMkT2g{ background-color: #DDDDDD; }
+
+.blVorjRekFrei{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; width: 85px; }
+
+.blMkDisFrei{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; font-weight: bold; TEXT-ALIGN: left; width: 20px; }
+
+.blVorjRekBez{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; width: 130px; }
+
+.blVorjRekLeist{ font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal;
+
+TEXT-ALIGN: left; padding: 0px; width: 50px; }
+
+.blVorjRekDaten{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 360px; }
+
+.blRekordDatum{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+
+font-style: normal; TEXT-ALIGN: right; padding-left: 0px; width:  90px; }
+
+</style>
+
+
+
+</HEAD>
+
+<table class="body" cellspacing="0">
+
+ <tr><td class="KopfZ1">Kreis-Leichtathletik-Verband Holzminden e.V.</td></tr>
+
+</table>
+
+<table class="body" cellspacing="0">
+
+ <tr><td class="KopfZ2">Bestenliste 2024</td>
+
+ <td class="Stand">Stand: 1.01.2025</td></tr>
+
+</table>
+
+<BR>
+
+<table CLASS="body" cellspacing="0"><TBODY>
+
+<tr><td CLASS=blGrund><a NAME=Anfang></a></td></tr>
+
+<tr><td CLASS="blGrund"><a href="#10">M&auml;nner</a></td></tr>
+
+<tr><td CLASS="blGrund"><a href="#11">Frauen</a></td></tr>
+
+<tr><td CLASS="blGrund"><a href="#20">M&auml;nnliche Jugend U20</a></td></tr>
+
+<tr><td CLASS="blGrund"><a href="#22">M&auml;nnliche Jugend U18</a></td></tr>
+
+<tr><td CLASS="blGrund"><a href="#21">Weibliche Jugend U20</a></td></tr>
+
+<tr><td CLASS="blGrund"><a href="#23">Weibliche Jugend U18</a></td></tr>
+
+<tr><td CLASS="blGrund">M&auml;nnliche Jugend:  <a href="#38">M14</a>    <a href="#35">M12</a>    </td></tr>
+
+<tr><td CLASS="blGrund">Weibliche Jugend:  <a href="#49">W15</a>    <a href="#48">W14</a>    </td></tr>
+
+<tr><td CLASS="blGrund">Senioren:  <a href="#60">M55</a>    <a href="#62">M60</a>    <a href="#64">M65</a>    <a href="#72">M85</a>    </td></tr>
+
+<tr><td CLASS="blGrund">Seniorinnen:  <a href="#55">W40</a>    <a href="#63">W60</a>    <a href="#67">W70</a>    </td></tr>
+
+</TBODY></table><br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>M&auml;nner<a NAME=10></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B10610">Kugelsto&szlig;</a></td>
+
+<td CLASS="blLink2"></td>
+
+<td CLASS="blLink3"></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B10610></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Kugelsto&szlig;   7.26kg</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">12,93</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Preu&szlig;ing, Robin</td>
+
+<td CLASS="blJGg">2005</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Bremen</td>
+
+<td CLASS="blDatumg">07.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#10">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Frauen<a NAME=11></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B11040">200 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B11260">4 x 100 m Staffel</a></td>
+
+<td CLASS="blLink3"><a href="#B11520">Stabhochsprung</a></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B11040></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">200 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">28,73</td>
+
+<td CLASS="blWindg">-0,5</td>
+
+<td CLASS="blNameg">Just, Johanna</td>
+
+<td CLASS="blJGg">2002</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">25.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#11">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B11260></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">4 x 100 m Staffel   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">53,30</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">MTV 49 Holzminden</td>
+
+<td CLASS="blJGg"></td>
+
+<td CLASS="blVereing"></td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">25.08.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blStMaTnFreig"></td>
+
+<td CLASS="blStMaTng">Just, Johanna (2002);  Robelski, Laura (2008);  Thimm, Julika (2008);  Rathmann, Lilly (2007)</td>
+
+<td CLASS="blDatumMkT2g"></td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#11">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B11520></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Stabhochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">2,83</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">B&uuml;sel, Yasemin</td>
+
+<td CLASS="blJGg">2000</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Nienhagen</td>
+
+<td CLASS="blDatumg">09.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#11">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>M&auml;nnliche Jugend U20<a NAME=20></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B20030">100 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B20040">200 m Lauf</a></td>
+
+<td CLASS="blLink3"><a href="#B20050">400 m Lauf</a></td>
+
+<td CLASS="blLink4"><a href="#B20260">4 x 100 m Staffel</a></td>
+
+<td CLASS="blLink5"><a href="#B20520">Stabhochsprung</a></td>
+
+<td CLASS="blLink6"><a href="#B20610">Kugelsto&szlig;</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B20640">Speerwurf</a></td>
+
+<td CLASS="blLink2"></td>
+
+<td CLASS="blLink3"></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B20030></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">100 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">11,48</td>
+
+<td CLASS="blWindg">+0,1</td>
+
+<td CLASS="blNameg">Schneider, Maximilian</td>
+
+<td CLASS="blJGg">2005</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Hannover</td>
+
+<td CLASS="blDatumg">25.05.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungw">12,47</td>
+
+<td CLASS="blWindw">-0,7</td>
+
+<td CLASS="blNamew">Preu&szlig;ing, Robin</td>
+
+<td CLASS="blJGw">2005</td>
+
+<td CLASS="blVereinw">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtw">Bad Harzburg</td>
+
+<td CLASS="blDatumw">01.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#20">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B20040></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">200 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">23,22</td>
+
+<td CLASS="blWindg">-0,4</td>
+
+<td CLASS="blNameg">Schneider, Maximilian</td>
+
+<td CLASS="blJGg">2005</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Hannover</td>
+
+<td CLASS="blDatumg">25.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#20">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B20050></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">400 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">55,76</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Schneider, Maximilian</td>
+
+<td CLASS="blJGg">2005</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Stuhr-Moordeich</td>
+
+<td CLASS="blDatumg">04.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#20">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B20260></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">4 x 100 m Staffel   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">47,49</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">MTV 49 Holzminden</td>
+
+<td CLASS="blJGg"></td>
+
+<td CLASS="blVereing"></td>
+
+<td CLASS="blOrtg">Bad Harzburg</td>
+
+<td CLASS="blDatumg">01.05.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blStMaTnFreig"></td>
+
+<td CLASS="blStMaTng">Meyer, Janik (2005);  Preu&szlig;ing, Robin (2005);  Schneider, Maximilian (2005);  Titze, Jasper (2007)</td>
+
+<td CLASS="blDatumMkT2g"></td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#20">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B20520></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Stabhochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">4,05</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Meyer, Janik</td>
+
+<td CLASS="blJGg">2005</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Holzminden</td>
+
+<td CLASS="blDatumg">28.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#20">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B20610></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Kugelsto&szlig;   6 kg</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">14,22</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Preu&szlig;ing, Robin</td>
+
+<td CLASS="blJGg">2005</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Hannover</td>
+
+<td CLASS="blDatumg">08.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#20">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B20640></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Speerwurf   800 g</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">56,84</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Preu&szlig;ing, Robin</td>
+
+<td CLASS="blJGg">2005</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">L&uuml;beck</td>
+
+<td CLASS="blDatumg">13.07.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#20">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>M&auml;nnliche Jugend U18<a NAME=22></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B22030">100 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B22040">200 m Lauf</a></td>
+
+<td CLASS="blLink3"><a href="#B22050">400 m Lauf</a></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B22030></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">100 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">13,25</td>
+
+<td CLASS="blWindg">+0,2</td>
+
+<td CLASS="blNameg">Titze, Jasper</td>
+
+<td CLASS="blJGg">2007</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Sarstedt</td>
+
+<td CLASS="blDatumg">01.06.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungw">13,57</td>
+
+<td CLASS="blWindw">-1,9</td>
+
+<td CLASS="blNamew">D&ouml;ring, Roberto Inda</td>
+
+<td CLASS="blJGw">2008</td>
+
+<td CLASS="blVereinw">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtw">Stuhr-Moordeich</td>
+
+<td CLASS="blDatumw">04.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#22">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B22040></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">200 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">26,70</td>
+
+<td CLASS="blWindg">+1,0</td>
+
+<td CLASS="blNameg">Titze, Jasper</td>
+
+<td CLASS="blJGg">2007</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Nienhagen</td>
+
+<td CLASS="blDatumg">09.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#22">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B22050></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">400 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">60,33</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Titze, Jasper</td>
+
+<td CLASS="blJGg">2007</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Sarstedt</td>
+
+<td CLASS="blDatumg">01.06.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungw">63,12</td>
+
+<td CLASS="blWindw"></td>
+
+<td CLASS="blNamew">D&ouml;ring, Roberto Inda</td>
+
+<td CLASS="blJGw">2008</td>
+
+<td CLASS="blVereinw">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtw">Stuhr-Moordeich</td>
+
+<td CLASS="blDatumw">04.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#22">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Jugend M14<a NAME=38></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B38030">100 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B38170">80 m H&uuml;rden</a></td>
+
+<td CLASS="blLink3"><a href="#B38610">Kugelsto&szlig;</a></td>
+
+<td CLASS="blLink4"><a href="#B38640">Speerwurf</a></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B38030></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">100 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">12,85</td>
+
+<td CLASS="blWindg">+0,5</td>
+
+<td CLASS="blNameg">Stebner, Paul</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">25.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#38">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B38170></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">80 m H&uuml;rden   0.838m</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">12,97</td>
+
+<td CLASS="blWindg">-1,1</td>
+
+<td CLASS="blNameg">Stebner, Paul</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">25.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#38">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B38610></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Kugelsto&szlig;   4 kg</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">10,69</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Stebner, Paul</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Hamburg</td>
+
+<td CLASS="blDatumg">28.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#38">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B38640></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Speerwurf   600 g</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">34,21</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Stebner, Paul</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Sarstedt</td>
+
+<td CLASS="blDatumg">21.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#38">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Jugend M12<a NAME=35></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B35020">75 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B35520">Stabhochsprung</a></td>
+
+<td CLASS="blLink3"><a href="#B35530">Weitsprung</a></td>
+
+<td CLASS="blLink4"><a href="#B35537">Weitsprung Zone</a></td>
+
+<td CLASS="blLink5"><a href="#B35610">Kugelsto&szlig;</a></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B35020></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">75 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">11,20</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Robelski, Niklas</td>
+
+<td CLASS="blJGg">2012</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Hamburg</td>
+
+<td CLASS="blDatumg">28.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#35">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B35520></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Stabhochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">2,26</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Robelski, Niklas</td>
+
+<td CLASS="blJGg">2012</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">25.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#35">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B35530></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Weitsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">4,58</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Robelski, Niklas</td>
+
+<td CLASS="blJGg">2012</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">25.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#35">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B35537></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Weitsprung Zone   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">4,18</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Robelski, Niklas</td>
+
+<td CLASS="blJGg">2012</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Hamburg</td>
+
+<td CLASS="blDatumg">28.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#35">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B35610></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Kugelsto&szlig;   3 kg</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">8,06</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Robelski, Niklas</td>
+
+<td CLASS="blJGg">2012</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Hamburg</td>
+
+<td CLASS="blDatumg">28.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#35">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Senioren M55<a NAME=60></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B60030">100 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B60120">5000 m Lauf</a></td>
+
+<td CLASS="blLink3"><a href="#B60510">Hochsprung</a></td>
+
+<td CLASS="blLink4"><a href="#B60520">Stabhochsprung</a></td>
+
+<td CLASS="blLink5"><a href="#B60610">Kugelsto&szlig;</a></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B60030></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">100 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">14,92</td>
+
+<td CLASS="blWindg">+0,3</td>
+
+<td CLASS="blNameg">Talke, Michael</td>
+
+<td CLASS="blJGg">1968</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">04.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#60">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B60120></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">5000 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">23:21,86</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Hannig, Torsten</td>
+
+<td CLASS="blJGg">1966</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">19.10.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungw">25:36,95</td>
+
+<td CLASS="blWindw"></td>
+
+<td CLASS="blNamew">Trube, Mario</td>
+
+<td CLASS="blJGw">1967</td>
+
+<td CLASS="blVereinw">Post-SV Holzminden</td>
+
+<td CLASS="blOrtw">Uslar</td>
+
+<td CLASS="blDatumw">13.04.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#60">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B60510></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Hochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">1,56</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Talke, Michael</td>
+
+<td CLASS="blJGg">1968</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">03.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#60">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B60520></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Stabhochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">3,00</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Talke, Michael</td>
+
+<td CLASS="blJGg">1968</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Holzminden</td>
+
+<td CLASS="blDatumg">17.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#60">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B60610></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Kugelsto&szlig;   6 kg</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">9,77</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Talke, Michael</td>
+
+<td CLASS="blJGg">1968</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">03.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#60">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Senioren M60<a NAME=62></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B62110">3000 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B62120">5000 m Lauf</a></td>
+
+<td CLASS="blLink3"></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B62110></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">3000 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">14:17,23</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Ebeling, Matthias</td>
+
+<td CLASS="blJGg">1964</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">04.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#62">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B62120></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">5000 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">25:02,00</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Ebeling, Matthias</td>
+
+<td CLASS="blJGg">1964</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">13.04.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#62">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Senioren M65<a NAME=64></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B64110">3000 m Lauf</a></td>
+
+<td CLASS="blLink2"></td>
+
+<td CLASS="blLink3"></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B64110></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">3000 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">15:52,13</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Lange, Andreas</td>
+
+<td CLASS="blJGg">1958</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">13.04.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#64">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Senioren M85<a NAME=72></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B72070">1000 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B72120">5000 m Lauf</a></td>
+
+<td CLASS="blLink3"></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B72070></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">1000 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">9:08,75</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Bettermann, Edgar</td>
+
+<td CLASS="blJGg">1936</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">04.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#72">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B72120></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">5000 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">33:29,91</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Ebeling, Rudolf</td>
+
+<td CLASS="blJGg">1939</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">13.04.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#72">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Weibliche Jugend U20<a NAME=21></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B21030">100 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B21260">4 x 100 m Staffel</a></td>
+
+<td CLASS="blLink3"><a href="#B21520">Stabhochsprung</a></td>
+
+<td CLASS="blLink4"><a href="#B21610">Kugelsto&szlig;</a></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B21030></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">100 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">13,36</td>
+
+<td CLASS="blWindg">-0,8</td>
+
+<td CLASS="blNameg">Reinert, Isa Mariann</td>
+
+<td CLASS="blJGg">2006</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Hannover</td>
+
+<td CLASS="blDatumg">08.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#21">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B21260></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">4 x 100 m Staffel   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">54,69</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">MTV 49 Holzminden</td>
+
+<td CLASS="blJGg"></td>
+
+<td CLASS="blVereing"></td>
+
+<td CLASS="blOrtg">Bad Harzburg</td>
+
+<td CLASS="blDatumg">01.05.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blStMaTnFreig"></td>
+
+<td CLASS="blStMaTng">Thimm, Julika (2008);  Robelski, Laura (2008);  H&auml;rke, Klara (2007);  Unverzagt, Tanja (2006)</td>
+
+<td CLASS="blDatumMkT2g"></td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#21">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B21520></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Stabhochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">3,55</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Unverzagt, Tanja</td>
+
+<td CLASS="blJGg">2006</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Holzminden</td>
+
+<td CLASS="blDatumg">28.06.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungw">3,20</td>
+
+<td CLASS="blWindw"></td>
+
+<td CLASS="blNamew">Klinzmann, Jolina</td>
+
+<td CLASS="blJGw">2006</td>
+
+<td CLASS="blVereinw">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtw">Hannover</td>
+
+<td CLASS="blDatumw">09.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#21">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B21610></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Kugelsto&szlig;   4 kg</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">8,59</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Reinert, Isa Mariann</td>
+
+<td CLASS="blJGg">2006</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Hannover</td>
+
+<td CLASS="blDatumg">08.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#21">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Weibliche Jugend U18<a NAME=23></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B23030">100 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B23040">200 m Lauf</a></td>
+
+<td CLASS="blLink3"><a href="#B23510">Hochsprung</a></td>
+
+<td CLASS="blLink4"><a href="#B23520">Stabhochsprung</a></td>
+
+<td CLASS="blLink5"><a href="#B23530">Weitsprung</a></td>
+
+<td CLASS="blLink6"><a href="#B23610">Kugelsto&szlig;</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B23640">Speerwurf</a></td>
+
+<td CLASS="blLink2"></td>
+
+<td CLASS="blLink3"></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B23030></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">100 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">14,20</td>
+
+<td CLASS="blWindg">-1,5</td>
+
+<td CLASS="blNameg">Robelski, Laura</td>
+
+<td CLASS="blJGg">2008</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">25.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#23">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B23040></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">200 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">29,59</td>
+
+<td CLASS="blWindg">+1,1</td>
+
+<td CLASS="blNameg">Robelski, Laura</td>
+
+<td CLASS="blJGg">2008</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">25.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#23">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B23510></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Hochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">1,60</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">H&auml;rke, Klara</td>
+
+<td CLASS="blJGg">2007</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Braunschweig</td>
+
+<td CLASS="blDatumg">12.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#23">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B23520></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Stabhochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">3,93</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">H&auml;rke, Klara</td>
+
+<td CLASS="blJGg">2007</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Holzminden</td>
+
+<td CLASS="blDatumg">18.05.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungw">3,43</td>
+
+<td CLASS="blWindw"></td>
+
+<td CLASS="blNamew">Rathmann, Lilly</td>
+
+<td CLASS="blJGw">2007</td>
+
+<td CLASS="blVereinw">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtw">Holzminden</td>
+
+<td CLASS="blDatumw">18.05.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">3,05</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Thimm, Julika</td>
+
+<td CLASS="blJGg">2008</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Holzminden</td>
+
+<td CLASS="blDatumg">28.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#23">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B23530></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Weitsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">5,44</td>
+
+<td CLASS="blWindg">+0,0</td>
+
+<td CLASS="blNameg">H&auml;rke, Klara</td>
+
+<td CLASS="blJGg">2007</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Nordstemmen</td>
+
+<td CLASS="blDatumg">24.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#23">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B23610></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Kugelsto&szlig;   3 kg</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">9,41</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Rathmann, Lilly</td>
+
+<td CLASS="blJGg">2007</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Sarstedt</td>
+
+<td CLASS="blDatumg">21.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#23">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B23640></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Speerwurf   500 g</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">36,78</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">H&auml;rke, Klara</td>
+
+<td CLASS="blJGg">2007</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Berlin</td>
+
+<td CLASS="blDatumg">17.09.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungw">21,48</td>
+
+<td CLASS="blWindw"></td>
+
+<td CLASS="blNamew">Rathmann, Lilly</td>
+
+<td CLASS="blJGw">2007</td>
+
+<td CLASS="blVereinw">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtw">Sarstedt</td>
+
+<td CLASS="blDatumw">21.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#23">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Jugend W15<a NAME=49></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B49030">100 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B49170">80 m H&uuml;rden</a></td>
+
+<td CLASS="blLink3"><a href="#B49510">Hochsprung</a></td>
+
+<td CLASS="blLink4"><a href="#B49520">Stabhochsprung</a></td>
+
+<td CLASS="blLink5"><a href="#B49530">Weitsprung</a></td>
+
+<td CLASS="blLink6"><a href="#B49610">Kugelsto&szlig;</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B49640">Speerwurf</a></td>
+
+<td CLASS="blLink2"><a href="#B49780">Block S/S</a></td>
+
+<td CLASS="blLink3"></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B49030></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">100 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">13,69</td>
+
+<td CLASS="blWindg">-0,6</td>
+
+<td CLASS="blNameg">Rieger, Anna</td>
+
+<td CLASS="blJGg">2009</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Stuhr</td>
+
+<td CLASS="blDatumg">26.05.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungw">14,22</td>
+
+<td CLASS="blWindw">+0,8</td>
+
+<td CLASS="blNamew">Bernau, Charlotte</td>
+
+<td CLASS="blJGw">2009</td>
+
+<td CLASS="blVereinw">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtw">Hannover</td>
+
+<td CLASS="blDatumw">09.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#49">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B49170></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">80 m H&uuml;rden   0.762m</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">12,48</td>
+
+<td CLASS="blWindg">-1,2</td>
+
+<td CLASS="blNameg">Rieger, Anna</td>
+
+<td CLASS="blJGg">2009</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Hannover</td>
+
+<td CLASS="blDatumg">08.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#49">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B49510></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Hochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">1,48</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Rieger, Anna</td>
+
+<td CLASS="blJGg">2009</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Stuhr</td>
+
+<td CLASS="blDatumg">26.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#49">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B49520></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Stabhochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">3,55</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Rieger, Anna</td>
+
+<td CLASS="blJGg">2009</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Celle</td>
+
+<td CLASS="blDatumg">14.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#49">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B49530></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Weitsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">4,77</td>
+
+<td CLASS="blWindg">+1,0</td>
+
+<td CLASS="blNameg">Rieger, Anna</td>
+
+<td CLASS="blJGg">2009</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Stuhr-Moordeich</td>
+
+<td CLASS="blDatumg">04.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#49">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B49610></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Kugelsto&szlig;   3 kg</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">7,31</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Bernau, Charlotte</td>
+
+<td CLASS="blJGg">2009</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Hannover</td>
+
+<td CLASS="blDatumg">09.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#49">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B49640></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Speerwurf   500 g</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">17,05</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Rieger, Anna</td>
+
+<td CLASS="blJGg">2009</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Stuhr</td>
+
+<td CLASS="blDatumg">26.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#49">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B49780></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Block S/S   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blMkDiszi">100m-80m H.-Weit-Hoch-Speer (500g)</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">2.417</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Rieger, Anna</td>
+
+<td CLASS="blJGg">2009</td>
+
+<td CLASS="blVereing">MTV 49 Holzminden</td>
+
+<td CLASS="blOrtg">Stuhr</td>
+
+<td CLASS="blDatumg">26.05.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blStMaTnFreig"></td>
+
+<td CLASS="blStMaTng">13,69(-0,6)-12,85(+1,5)-4,70(+0,0)-1,48-17,05</td>
+
+<td CLASS="blDatumMkT2g"></td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#49">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Jugend W14<a NAME=48></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B48030">100 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B48045">300 m Lauf</a></td>
+
+<td CLASS="blLink3"><a href="#B48060">800 m Lauf</a></td>
+
+<td CLASS="blLink4"><a href="#B48170">80 m H&uuml;rden</a></td>
+
+<td CLASS="blLink5"><a href="#B48510">Hochsprung</a></td>
+
+<td CLASS="blLink6"><a href="#B48530">Weitsprung</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B48610">Kugelsto&szlig;</a></td>
+
+<td CLASS="blLink2"><a href="#B48640">Speerwurf</a></td>
+
+<td CLASS="blLink3"><a href="#B48710">3-Kampf</a></td>
+
+<td CLASS="blLink4"><a href="#B48720">4-Kampf</a></td>
+
+<td CLASS="blLink5"><a href="#B48750">7-Kampf</a></td>
+
+<td CLASS="blLink6"><a href="#B48780">Block S/S</a></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48030></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">100 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">12,70</td>
+
+<td CLASS="blWindg">+1,9</td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Hannover</td>
+
+<td CLASS="blDatumg">09.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48045></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">300 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">45,07</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">04.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48060></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">800 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">2:33,53</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">16.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48170></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">80 m H&uuml;rden   0.762m</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">13,63</td>
+
+<td CLASS="blWindg">-2,9</td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">16.06.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungw">15,97</td>
+
+<td CLASS="blWindw">+0,0</td>
+
+<td CLASS="blNamew">Meyer, Jette</td>
+
+<td CLASS="blJGw">2010</td>
+
+<td CLASS="blVereinw">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtw">Hannover</td>
+
+<td CLASS="blDatumw">08.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48510></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Hochsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">1,60</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Hannover</td>
+
+<td CLASS="blDatumg">09.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48530></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Weitsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">5,20</td>
+
+<td CLASS="blWindg">+1,1</td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Stuhr</td>
+
+<td CLASS="blDatumg">26.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48610></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Kugelsto&szlig;   3 kg</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">8,09</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">15.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48640></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Speerwurf   500 g</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">17,67</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">04.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48710></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">3-Kampf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blMkDiszi">100m-Weit-Kugel (3kg)</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">1.514</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">15.06.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blStMaTnFreig"></td>
+
+<td CLASS="blStMaTng">12,93(-1,5)-5,04(+2,0)-8,09</td>
+
+<td CLASS="blDatumMkT2g"></td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48720></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">4-Kampf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blMkDiszi">100m-Weit-Hoch-Kugel (3kg)</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">2.055</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">15.06.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blStMaTnFreig"></td>
+
+<td CLASS="blStMaTng">12,93(-1,5)-5,04(+2,0)-1,56-8,09</td>
+
+<td CLASS="blDatumMkT2g"></td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48750></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">7-Kampf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blMkDiszi">100m-Weit-Kugel (3kg)-Hoch-80m H.-Speer (500g)-800m</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">3.413</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Edemissen</td>
+
+<td CLASS="blDatumg">15.06./</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blStMaTnFreig"></td>
+
+<td CLASS="blStMaTng">12,93(-1,5)-5,04(+2,0)-8,09-1,56/13,63(-2,9)-17,56-2:33,53</td>
+
+<td CLASS="blDatumMkT2g">16.06.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B48780></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Block S/S   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blMkDiszi">100m-80m H.-Weit-Hoch-Speer (500g)</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">2.457</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Lucya, Fiona Antonia</td>
+
+<td CLASS="blJGg">2010</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Stuhr</td>
+
+<td CLASS="blDatumg">26.05.</td></tr>
+
+</table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blStMaTnFreig"></td>
+
+<td CLASS="blStMaTng">12,90(-0,5)-13,89(+0,0)-5,20(+1,1)-1,52-13,45</td>
+
+<td CLASS="blDatumMkT2g"></td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#48">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Seniorinnen W40<a NAME=55></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B55610">Kugelsto&szlig;</a></td>
+
+<td CLASS="blLink2"><a href="#B55640">Speerwurf</a></td>
+
+<td CLASS="blLink3"></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B55610></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Kugelsto&szlig;   4 kg</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">8,27</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Klenke, Katharina</td>
+
+<td CLASS="blJGg">1984</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Sarstedt</td>
+
+<td CLASS="blDatumg">21.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#55">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B55640></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Speerwurf   600 g</td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">27,52</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Klenke, Katharina</td>
+
+<td CLASS="blJGg">1984</td>
+
+<td CLASS="blVereing">TV 87 Stadtoldendorf</td>
+
+<td CLASS="blOrtg">Sarstedt</td>
+
+<td CLASS="blDatumg">21.09.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#55">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Seniorinnen W60<a NAME=63></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B63030">100 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B63040">200 m Lauf</a></td>
+
+<td CLASS="blLink3"><a href="#B63530">Weitsprung</a></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B63030></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">100 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">18,46</td>
+
+<td CLASS="blWindg">+0,4</td>
+
+<td CLASS="blNameg">B&uuml;ttcher, Anette</td>
+
+<td CLASS="blJGg">1962</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">H&ouml;xter</td>
+
+<td CLASS="blDatumg">05.05.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#63">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B63040></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">200 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">40,23</td>
+
+<td CLASS="blWindg">-0,1</td>
+
+<td CLASS="blNameg">B&uuml;ttcher, Anette</td>
+
+<td CLASS="blJGg">1962</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">04.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#63">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B63530></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Weitsprung   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">3,01</td>
+
+<td CLASS="blWindg">+0,8</td>
+
+<td CLASS="blNameg">B&uuml;ttcher, Anette</td>
+
+<td CLASS="blJGg">1962</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">04.08.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#63">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="0">
+
+<tr><td CLASS=AklZ>Seniorinnen W70<a NAME=67></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLink1"><a href="#B67110">3000 m Lauf</a></td>
+
+<td CLASS="blLink2"><a href="#B67125">10000 m Lauf</a></td>
+
+<td CLASS="blLink3"><a href="#B67128">Stundenlauf</a></td>
+
+<td CLASS="blLink4"></td>
+
+<td CLASS="blLink5"></td>
+
+<td CLASS="blLink6"></td></tr></table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#Anfang">zur&uuml;ck zum Anfang</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B67110></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">3000 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">15:34,65</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Dorusch, Elke</td>
+
+<td CLASS="blJGg">1954</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">13.04.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#67">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B67125></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">10000 m Lauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">54:46,96</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Dorusch, Elke</td>
+
+<td CLASS="blJGg">1954</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">19.10.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#67">zur&uuml;ck</a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName"><a NAME=B67128></a></td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blWbName">Stundenlauf   </td></tr></table>
+
+<table CLASS="body" cellspacing="0" cellpadding="0">
+
+<tr><td CLASS="blLeistungg">10930</td>
+
+<td CLASS="blWindg"></td>
+
+<td CLASS="blNameg">Dorusch, Elke</td>
+
+<td CLASS="blJGg">1954</td>
+
+<td CLASS="blVereing">Post-SV Holzminden</td>
+
+<td CLASS="blOrtg">Uslar</td>
+
+<td CLASS="blDatumg">19.10.</td></tr>
+
+</table>
+
+<br><table CLASS="body" cellspacing="0">
+
+<tr><td CLASS="blZurueck"><a href="#67">zur&uuml;ck</a></td></tr></table>
+
+<br>
+
+<table CLASS="body" cellspacing="1"><tr>
+
+<td CLASS="FussZ">Erstellt mit COSA WIN 3.3.9.1 / 2.2.9.1     --  COSA-Software,
+
+Berggartenstr. 5a, D-38271 Baddeckenstedt<BR>eMail: renziesoft@aol.com Home-PAGE: <A CLASS="cosa" href="http://www.cosa-software.de"
+
+target="_blank">www.cosa-software.de</A><BR>Lizenziert f&uuml;r: NI/3600  KLV Holzminden</td>
+
+</tr></table></BODY></HTML>
