@@ -1,15 +1,10 @@
-<script>
-// Lädt den Footer automatisch aus footer.html nach
+// footer.js (ohne <script>-Tags)
 fetch('footer.html')
-  .then(response => response.text())
+  .then(r => r.text())
   .then(html => {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const newFooter = doc.querySelector('footer');
-    const currentFooter = document.querySelector('footer.site');
-    if (currentFooter && newFooter) {
-      currentFooter.replaceWith(newFooter);
-    }
+    const placeholder = document.querySelector('footer.site');
+    if (!placeholder) return;
+    // Ersetzt den Platzhalter <footer class="site"></footer> komplett
+    placeholder.outerHTML = html;
   })
   .catch(err => console.error('Footer konnte nicht geladen werden:', err));
-</script>
