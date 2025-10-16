@@ -24,7 +24,7 @@ header.site{position:sticky;top:0;background:#fff;border-bottom:1px solid #e2e8f
 .hero{background:linear-gradient(180deg, #0b1020 0%, #10264c 100%);color:#fff;position:relative;overflow:hidden}
 .hero .container{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:32px;padding:56px 16px}
 .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.1;margin:0 0 12px}
-.hero p{opacity:.95;font-size:18px}
+.hero p{opacity:.95;font-size:18px;color:#e0e0e0;}
 .hero .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(6px);border-radius:20px;padding:16px}
 .sections{padding:56px 0}
 .grid{display:grid;gap:18px}
