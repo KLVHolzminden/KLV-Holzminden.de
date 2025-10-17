@@ -31,32 +31,66 @@
 <section class="sections">
   <div class="container">
     <h2 class="section-title">Ergebnisse & Bestenlisten</h2>
-    <div class="grid col3">
-      <div class="card">
-        <h3>Aktuelle Ergebnisse</h3>
-        <ul>
-          <li><a href="#">Sportfest XYZ (PDF)</a></li>
-          <li><a href="#">Kreismeisterschaften U14 (Link)</a></li>
-          <li><a href="#">Crosslauf Holzminden (PDF)</a></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Kreisbestenlisten</h3>
-        <p>Jahrgänge & Disziplinen. Downloads als PDF.</p>
-        <ul>
-          <li><a href="#">Kreisbestenliste 2024 (PDF)</a></li>
-          <li><a href="#">Kreisbestenliste 2023 (PDF)</a></li>
-          <li><a href="#">Kreisrekorde (PDF)</a></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Bezirks- & Landesebene</h3>
-        <ul>
-          <li><a href="#">Bezirksbestenliste (extern)</a></li>
-          <li><a href="#">NLV – Ergebnisdienst</a></li>
-        </ul>
-      </div>
-    </div>
+   <div class="grid col3">
+
+  <!-- A) Kreisbestenlisten -->
+  <article class="card">
+    <h3>Kreisbestenlisten</h3>
+    <p class="lead" style="font-size:14px;color:#64748b;margin:6px 0 12px">
+      Jahreslisten des KLV Holzminden.
+    </p>
+    <ul>
+      <!-- 2024: lokal eingebettet oder als Link (siehe Hinweise unten) -->
+      <li>
+        <a href="assets/bestenliste_2024.html" target="_blank" rel="noopener">
+          Kreisbestenliste 2024 (HTML)
+        </a>
+      </li>
+      <!-- Alternativ/zusätzlich als externer Link: -->
+      <!-- <li><a href="https://www.stb-tb.de/klvhol/daten/besten24.htm" target="_blank" rel="noopener">Kreisbestenliste 2024 (extern)</a></li> -->
+
+      <!-- Beispiele für Folgejahre – nur Dateinamen/Links tauschen -->
+      <li><a href="assets/Kreisbestenliste_2023.pdf" target="_blank" rel="noopener">Kreisbestenliste 2023 (PDF)</a></li>
+      <li><a href="assets/Kreisbestenliste_2022.pdf" target="_blank" rel="noopener">Kreisbestenliste 2022 (PDF)</a></li>
+    </ul>
+    <p class="notice">Hinweis: Dateien bitte im Ordner <code>assets/</code> ablegen.</p>
+  </article>
+
+  <!-- B) Kreisrekorde -->
+  <article class="card">
+    <h3>Kreisrekorde</h3>
+    <ul>
+      <li><a href="assets/Kreisrekorde.pdf" target="_blank" rel="noopener">Kreisrekorde – Übersicht (PDF)</a></li>
+      <!-- Optional: getrennte Listen -->
+      <!-- <li><a href="assets/Kreisrekorde_Maenner.pdf">Männer (PDF)</a></li>
+      <li><a href="assets/Kreisrekorde_Frauen.pdf">Frauen (PDF)</a></li> -->
+    </ul>
+    <p class="notice">Stand und Quelle bitte im PDF kenntlich machen.</p>
+  </article>
+
+  <!-- C) Aktuelle Ergebnisse (Einzel-Wettkämpfe) -->
+  <article class="card">
+    <h3>Aktuelle Ergebnisse</h3>
+    <ul>
+      <!-- Beispiele – einfach ergänzen/tauschen -->
+      <li><a href="assets/Ergebnis_2024-05-10_KM_Jugend.pdf" target="_blank" rel="noopener">Kreismeisterschaften Jugend (10.05.2024)</a></li>
+      <li><a href="https://ladv.de/ergebnisse/12345" target="_blank" rel="noopener">Kinderleichtathletik Sportfest (externer Link)</a></li>
+      <li><a href="assets/Ergebnis_Crosslauf_Holzminden_2024.pdf" target="_blank" rel="noopener">Crosslauf Holzminden</a></li>
+    </ul>
+    <p class="notice">Lokale PDFs im Ordner <code>assets/</code> ablegen, externe Links direkt einfügen.</p>
+  </article>
+
+  <!-- D) Externe Dienste -->
+  <article class="card">
+    <h3>Externe Dienste</h3>
+    <ul>
+      <li><a href="https://nlv-la.de/ergebnisse" target="_blank" rel="noopener">NLV – Ergebnisdienst</a></li>
+      <li><a href="https://ladv.de" target="_blank" rel="noopener">LADV</a></li>
+    </ul>
+  </article>
+
+</div>
+
     <p class="notice">Hier einfach Links/Dateien austauschen oder ergänzen.</p>
   </div>
 </section>
