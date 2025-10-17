@@ -28,13 +28,29 @@
   </div>
 </header>
 
-<section class="sections">
+<<section class="sections">
   <div class="container">
-    <h2 class="section-title">Datenschutzhinweise</h2>
-    <p>Kurzer Hinweis: Diese statische Seite verarbeitet keine personenbezogenen Daten.
-       Es werden keine Cookies gesetzt und keine externen Skripte geladen (außer optionalen Links).</p>
+    <h2 class="section-title">Datenschutzerklärung</h2>
+
+    <div id="policy"></div>
+
+    <p class="notice" style="margin-top:16px">
+      Diese Seite lädt die aktuelle Datenschutzerklärung aus einer zentral gepflegten Datei.
+    </p>
   </div>
 </section>
+
+<script>
+// Lädt die Erklärung und setzt sie in #policy ein
+fetch('assets/datenschutzerklaerung.html')
+  .then(r => r.text())
+  .then(html => { document.getElementById('policy').innerHTML = html; })
+  .catch(() => {
+    document.getElementById('policy').innerHTML =
+      '<p>Die Datenschutzerklärung konnte gerade nicht geladen werden. Bitte später erneut versuchen.</p>';
+  });
+</script>
+
 
 <footer class="site"></footer>
 <script src="footer.js"></script>
