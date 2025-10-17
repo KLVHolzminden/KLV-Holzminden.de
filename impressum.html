@@ -31,10 +31,26 @@
 <section class="sections">
   <div class="container">
     <h2 class="section-title">Impressum</h2>
-    <p>Angaben gemäß § 5 TMG</p>
-    <p><em>Platzhalter – echte Vereinsangaben eintragen.</em></p>
+
+    <div id="impressum"></div>
+
+    <p class="notice" style="margin-top:16px">
+      Diese Seite lädt das Impressum automatisch aus <code>assets/impressumtext.html</code>.
+    </p>
   </div>
 </section>
+
+<script>
+// Lädt den Impressum-Text aus der Datei im assets-Ordner
+fetch('assets/impressumtext.html')
+  .then(response => response.text())
+  .then(html => { document.getElementById('impressum').innerHTML = html; })
+  .catch(() => {
+    document.getElementById('impressum').innerHTML =
+      '<p>Das Impressum konnte gerade nicht geladen werden. Bitte später erneut versuchen.</p>';
+  });
+</script>
+
 
 <footer class="site"></footer>
 <script src="footer.js"></script>
