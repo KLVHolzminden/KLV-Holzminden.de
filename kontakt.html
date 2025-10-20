@@ -6,6 +6,16 @@
 
   <title>KLV Holzminden – Kontakt</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .hint {color:#64748b;font-size:0.9rem;margin-top:12px;}
+  </style>
 </head>
 <body>
 
@@ -25,7 +35,7 @@
       <a href="verband.html">Verband</a>
       <a href="vereine.html">Vereine</a>
       <a href="downloads.html">Downloads</a>
-      <a href="kontakt.html">Kontakt</a>
+      <a href="kontakt.html" class="active">Kontakt</a>
     </nav>
   </div>
 </header>
@@ -33,10 +43,34 @@
 <section class="sections">
   <div class="container">
     <h2 class="section-title">Kontakt</h2>
-    <p class="lead">Fragen, Hinweise, Terminmeldungen? Kontaktaufnahme per E‑Mail.</p>
+    <p class="lead">Fragen, Hinweise, Terminmeldungen? Nutze das Formular oder schreib uns direkt eine E-Mail.</p>
+
     <div class="card">
       <p><strong>E-Mail:</strong> <a href="mailto:s.sander@ksbholzminden.de">s.sander@ksbholzminden.de</a></p>
-      <p>Optional: Kontaktformular eines Vereins/Ansprechpartners verlinken.</p>
+      <p>Oder direkt über das Kontaktformular:</p>
+
+      <!-- Microsoft Forms Einbettung -->
+      <iframe 
+        src="https://forms.office.com/e/0injdVHfmt?embed=true"
+        frameborder="0"
+        marginwidth="0"
+        marginheight="0"
+        allowfullscreen
+        webkitallowfullscreen
+        mozallowfullscreen
+        msallowfullscreen>
+      </iframe>
+
+      <p class="hint">
+        Sollte das Formular nicht angezeigt werden, öffne es bitte direkt:
+        <a href="https://forms.office.com/e/0injdVHfmt" target="_blank" rel="noopener">
+          Microsoft Forms – Kontaktformular
+        </a>.
+      </p>
+      <p class="hint">
+        Mit dem Absenden stimmst du der Verarbeitung gemäß 
+        <a href="datenschutz.html">Datenschutzerklärung</a> zu.
+      </p>
     </div>
   </div>
 </section>
@@ -45,3 +79,4 @@
 <script src="footer.js"></script>
 </body>
 </html>
+
