@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap:https://klv-holzminden-de.vercel.app/sitemap.xml
