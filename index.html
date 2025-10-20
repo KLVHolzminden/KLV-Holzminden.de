@@ -106,7 +106,19 @@
     </div>
   </section>
 
-  <footer class="site"></footer>
+    <footer class="site"></footer>
   <script src="footer.js"></script>
+
+  <!-- Navigation / Hamburger-Funktion -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('#main-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const open = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+  </script>
 </body>
 </html>
