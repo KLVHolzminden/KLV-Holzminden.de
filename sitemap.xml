@@ -1,13 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Startseite -->
   <url>
     <loc>https://klv-holzminden-de.vercel.app/</loc>
     <lastmod>2025-10-20</lastmod>
     <priority>1.0</priority>
   </url>
+
+  <!-- Unterseiten -->
   <url>
     <loc>https://klv-holzminden-de.vercel.app/kontakt.html</loc>
     <lastmod>2025-10-20</lastmod>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://klv-holzminden-de.vercel.app/verein.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://klv-holzminden-de.vercel.app/verband.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://klv-holzminden-de.vercel.app/termine.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://klv-holzminden-de.vercel.app/ergebnisse.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://klv-holzminden-de.vercel.app/downloads.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Rechtliches -->
+  <url>
+    <loc>https://klv-holzminden-de.vercel.app/impressum.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://klv-holzminden-de.vercel.app/datenschutz.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
