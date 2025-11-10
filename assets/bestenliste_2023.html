@@ -6,90 +6,163 @@
   <title>KLV Holzminden – Ergebnisse / Bestenliste 2023</title>
   <meta name="description" content="Kreisleichtathletikverband Holzminden – Ergebnisse / Bestenliste 2023 (Stand: 03.10.2023)" />
   <link rel="icon" href="/favicon.ico">
- <style>
-  :root{
-    --bg:#0f172a;  /* dunkel */
-    --fg:#e5e7eb;  /* helles Grau */
-    --muted:#94a3b8;
-    --accent:#22d3ee;
-    --card:#111827;
-    --line:#1f2937;
-    --chip:#0ea5e9;
-  }
-  *{box-sizing:border-box}
-  html,body{
-    margin:0; padding:0;
-    background:var(--bg);
-    color:var(--fg);               /* <<< sicherstellen, dass Text hell ist */
-    font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;
-    line-height:1.35;
-  }
-  /* >>> Diese zwei Regeln schützen vor fremden Styles, die Farbe/Anzeige überschreiben */
-  body, body * { color: inherit !important; }
-  main, section, table, thead, tbody, tr, td, th { display: revert !important; }
 
-  a{color:var(--accent);text-decoration:none}
-  a:hover{text-decoration:underline}
-
-  header{
-    /* Kein sticky/keine Transparenz, damit nichts versehentlich alles überlagert */
-    position:relative;
-    background:#0b1220;
-    border-bottom:1px solid var(--line);
-  }
-  .wrap{max-width:1100px;margin:0 auto;padding:12px 20px}
-  h1{font-size:clamp(22px,3vw,34px);margin:8px 0 4px}
-  .subtitle{color:var(--muted);font-size:.95rem;margin-bottom:10px}
-
-  .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:10px 0 6px}
-  .search{flex:1 1 320px;display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px}
-  .search input{width:100%;background:transparent;border:0;outline:none;color:inherit;font-size:15px}
-  .toc{display:flex;flex-wrap:wrap;gap:8px}
-  .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:#0b1220;border:1px solid var(--line);color:#cbd5e1;font-size:.9rem}
-  .chip:hover{border-color:var(--chip);color:#e2e8f0}
-
-  section{padding:18px 20px;margin:18px 0;border:1px solid var(--line);border-radius:16px;background:#0b1220}
-  section h2{margin:0 0 8px;font-size:1.3rem}
-  section .meta{color:var(--muted);font-size:.9rem;margin-bottom:10px}
-  table{width:100%;border-collapse:collapse;background:transparent}
-  thead th{
-    /* sticky aus, damit’s nichts überdeckt */
-    position:static;
-    background:#0b1220;border-bottom:1px solid var(--line);font-weight:600;text-align:left;padding:10px 8px
-  }
-  tbody td{padding:9px 8px;border-bottom:1px dashed #172036}
-  tbody tr:hover{background:#0e1628}
-  .event-title{display:inline-flex;align-items:center;gap:8px;margin:10px 0 6px;font-weight:700}
-  .backtop{margin-top:10px}
-  .note{color:var(--muted);font-size:.9rem}
-  .download{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:#0b1220}
-</style>
-
+  <style>
+    :root{
+      --bg:#0f172a;  /* dunkel */
+      --fg:#e5e7eb;  /* helles Grau */
+      --muted:#94a3b8;
+      --accent:#22d3ee;
+      --card:#111827;
+      --line:#1f2937;
+      --chip:#0ea5e9;
+    }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;line-height:1.35}
+    html,body{
+      margin:0; padding:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;
+      line-height:1.35;
+    }
+    /* schützt vor fremden Styles */
+    body, body * { color: inherit !important; }
+    main, section, table, thead, tbody, tr, td, th { display: revert !important; }
+
     a{color:var(--accent);text-decoration:none}
     a:hover{text-decoration:underline}
+
     header{
-      position:sticky;top:0;z-index:50;
-      background:linear-gradient(180deg, rgba(15,23,42,.98), rgba(15,23,42,.9) 70%, rgba(15,23,42,0));
-      backdrop-filter:saturate(150%) blur(6px);
-      border-bottom:1px solid var(--line)
+      position:relative;
+      background:#0b1220;
+      border-bottom:1px solid var(--line);
     }
     .wrap{max-width:1100px;margin:0 auto;padding:12px 20px}
     h1{font-size:clamp(22px,3vw,34px);margin:8px 0 4px}
     .subtitle{color:var(--muted);font-size:.95rem;margin-bottom:10px}
-    .toolbar{
-      display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:10px 0 6px
+
+    .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:10px 0 6px}
+    .search{flex:1 1 320px;display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px}
+    .search input{width:100%;background:transparent;border:0;outline:none;color:inherit;font-size:15px}
+    .toc{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:#0b1220;border:1px solid var(--line);color:#cbd5e1;font-size:.9rem}
+    .chip:hover{border-color:var(--chip);color:#e2e8f0}
+
+    section{padding:18px 20px;margin:18px 0;border:1px solid var(--line);border-radius:16px;background:#0b1220}
+    section h2{margin:0 0 8px;font-size:1.3rem}
+    section .meta{color:var(--muted);font-size:.9rem;margin-bottom:10px}
+    table{width:100%;border-collapse:collapse;background:transparent}
+    thead th{
+      position:static;
+      background:#0b1220;border-bottom:1px solid var(--line);font-weight:600;text-align:left;padding:10px 8px
     }
-    .search{
-      flex:1 1 320px;display:flex;align-items:center;gap:8px;
-      background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px
-    }
-    .search input{
-      width:100%;background:transparent;border:0;outline:none;color:var(--fg);font-size:15px
-    }
-    .toc{
-      display:flex;flex-wrap:wrap;gap:8px
-    }
-    .chip{
-      display:inline-block;padding:6px 10px;border-radius:999px;background:#0b1220;b
+    tbody td{padding:9px 8px;border-bottom:1px dashed #172036}
+    tbody tr:hover{background:#0e1628}
+    .event-title{display:inline-flex;align-items:center;gap:8px;margin:10px 0 6px;font-weight:700}
+    .backtop{margin-top:10px}
+    .note{color:var(--muted);font-size:.9rem}
+    .download{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:#0b1220}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Ergebnisse / Bestenliste 2023</h1>
+      <div class="subtitle">Kreisleichtathletikverband Holzminden · Stand: <strong>03.10.2023</strong></div>
+      <div class="toolbar">
+        <label class="search">
+          <span>🔍</span>
+          <input id="search" type="search" placeholder="Suche nach Name, Verein, Disziplin…" />
+        </label>
+        <a class="download" href="/assets/2023_BL_KLV.pdf" download>📄 PDF herunterladen</a>
+      </div>
+      <nav class="toc">
+        <a class="chip" href="#maenner">Männer</a>
+        <a class="chip" href="#frauen">Frauen</a>
+        <a class="chip" href="#u20m">U20 M</a>
+        <a class="chip" href="#u18w">U18 W</a>
+        <a class="chip" href="#senioren">Senioren</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+
+    <section id="maenner">
+      <h2>Männer</h2>
+      <div class="meta">Beispieldaten aus der Kreisbestenliste</div>
+      <div class="event-title">400 m Hürden</div>
+      <table>
+        <thead><tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr></thead>
+        <tbody>
+          <tr><td>66,23</td><td>Luca Tristan Göhmann</td><td>2003</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="frauen">
+      <h2>Frauen</h2>
+      <div class="event-title">400 m Hürden</div>
+      <table>
+        <thead><tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr></thead>
+        <tbody>
+          <tr><td>65,96</td><td>Nele Fasold</td><td>2004</td><td>TV 87 Stadtoldendorf</td><td>Lübeck</td><td>24.06.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="u20m">
+      <h2>U20 männlich</h2>
+      <div class="event-title">100 m</div>
+      <table>
+        <thead><tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr></thead>
+        <tbody>
+          <tr><td>11,76</td><td>+1,5</td><td>Maximilian Schneider</td><td>2005</td><td>MTV 49 Holzminden</td><td>Garbsen</td><td>25.07.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="u18w">
+      <h2>U18 weiblich</h2>
+      <div class="event-title">Stabhochsprung</div>
+      <table>
+        <thead><tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr></thead>
+        <tbody>
+          <tr><td>3,61</td><td>Klara Härke</td><td>2007</td><td>MTV 49 Holzminden</td><td>Beckum</td><td>10.09.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="senioren">
+      <h2>Senioren</h2>
+      <div class="event-title">M50 – Diskuswurf</div>
+      <table>
+        <thead><tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr></thead>
+        <tbody>
+          <tr><td>38,03</td><td>Frank Sander</td><td>1973</td><td>MTV 49 Holzminden</td><td>Höxter</td><td>02.09.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p class="note">Hinweis: Diese Seite ist ein Auszug. Die vollständige Kreisbestenliste 2023 steht als PDF zur Verfügung.</p>
+  </main>
+
+  <script>
+    // Einfache Client-Suche über alle Tabellenzeilen
+    (function(){
+      const q = document.getElementById('search');
+      const rows = Array.from(document.querySelectorAll('tbody tr'));
+      function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,''); }
+      q.addEventListener('input', () => {
+        const needle = norm(q.value);
+        rows.forEach(tr => {
+          const hay = norm(tr.innerText);
+          tr.style.display = hay.includes(needle) ? '' : 'none';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+px;background:#0b1220;b
