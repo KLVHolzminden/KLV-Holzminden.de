@@ -48,6 +48,25 @@
     .note{color:var(--muted);font-size:.9rem;margin-top:12px}
     footer{padding:22px 20px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);background:#0b1220}
     .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+    .printbtn{
+  padding:8px 12px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#0b1220;
+  cursor:pointer;
+  font-size:.95rem;
+}
+.printbtn:hover{border-color:#0ea5e9}
+
+/* Druck-Styles: saubere PDF aus der Seite */
+@media print {
+  header nav, .search, .chip, .backtop, .printbtn { display:none !important; }
+  section { break-inside: avoid; }
+  body { color:#000 !important; background:#fff !important; }
+  table { page-break-inside:auto; }
+  thead { display:table-header-group; }
+}
+
   </style>
 </head>
 
