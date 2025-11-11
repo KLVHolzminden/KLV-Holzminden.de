@@ -3,155 +3,821 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KLV Holzminden – Ergebnisse / Bestenliste 2023</title>
-  <meta name="description" content="Kreisleichtathletikverband Holzminden – Ergebnisse / Bestenliste 2023 (Stand: 03.10.2023)" />
+  <title>KLV Holzminden – Bestenliste 2023</title>
+  <meta name="description" content="Niedersächsischer Leichtathletik-Verband – 2023_BL_KLV (Stand: 03.10.2023), Kreis Holzminden." />
   <link rel="icon" href="/favicon.ico">
-
   <style>
     :root{
-      --bg:#0f172a;  /* dunkel */
-      --fg:#e5e7eb;  /* helles Grau */
+      --bg:#0f172a;   /* dunkel */
+      --fg:#e5e7eb;   /* text hell */
       --muted:#94a3b8;
       --accent:#22d3ee;
       --card:#111827;
       --line:#1f2937;
-      --chip:#0ea5e9;
     }
     *{box-sizing:border-box}
-    html,body{
-      margin:0; padding:0;
-      background:var(--bg);
-      color:var(--fg);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;
-      line-height:1.35;
-    }
-    /* schützt vor fremden Styles */
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;line-height:1.35}
+    /* defensiv gegen Fremdstyles */
     body, body * { color: inherit !important; }
     main, section, table, thead, tbody, tr, td, th { display: revert !important; }
 
     a{color:var(--accent);text-decoration:none}
     a:hover{text-decoration:underline}
 
-    header{
-      position:relative;
-      background:#0b1220;
-      border-bottom:1px solid var(--line);
-    }
-    .wrap{max-width:1100px;margin:0 auto;padding:12px 20px}
-    h1{font-size:clamp(22px,3vw,34px);margin:8px 0 4px}
-    .subtitle{color:var(--muted);font-size:.95rem;margin-bottom:10px}
+    header{position:relative;background:#0b1220;border-bottom:1px solid var(--line)}
+    .wrap{max-width:1100px;margin:0 auto;padding:14px 20px}
+    h1{font-size:clamp(22px,3vw,34px);margin:6px 0 2px}
+    .subtitle{color:var(--muted);font-size:.95rem;margin:4px 0 12px}
 
-    .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:10px 0 6px}
+    .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
     .search{flex:1 1 320px;display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px}
     .search input{width:100%;background:transparent;border:0;outline:none;color:inherit;font-size:15px}
-    .toc{display:flex;flex-wrap:wrap;gap:8px}
+    .toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
     .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:#0b1220;border:1px solid var(--line);color:#cbd5e1;font-size:.9rem}
-    .chip:hover{border-color:var(--chip);color:#e2e8f0}
+    .chip:hover{border-color:#0ea5e9;color:#e2e8f0}
 
     section{padding:18px 20px;margin:18px 0;border:1px solid var(--line);border-radius:16px;background:#0b1220}
-    section h2{margin:0 0 8px;font-size:1.3rem}
+    section h2{margin:0 0 8px;font-size:1.25rem}
     section .meta{color:var(--muted);font-size:.9rem;margin-bottom:10px}
-    table{width:100%;border-collapse:collapse;background:transparent}
-    thead th{
-      position:static;
-      background:#0b1220;border-bottom:1px solid var(--line);font-weight:600;text-align:left;padding:10px 8px
-    }
-    tbody td{padding:9px 8px;border-bottom:1px dashed #172036}
+    .event-title{margin:12px 0 6px;font-weight:700}
+    table{width:100%;border-collapse:collapse}
+    thead th{background:#0b1220;border-bottom:1px solid var(--line);text-align:left;padding:8px}
+    tbody td{padding:8px;border-bottom:1px dashed #172036;vertical-align:top}
     tbody tr:hover{background:#0e1628}
-    .event-title{display:inline-flex;align-items:center;gap:8px;margin:10px 0 6px;font-weight:700}
     .backtop{margin-top:10px}
-    .note{color:var(--muted);font-size:.9rem}
-    .download{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:#0b1220}
+    .note{color:var(--muted);font-size:.9rem;margin-top:12px}
+    footer{padding:22px 20px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);background:#0b1220}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
   </style>
 </head>
 
 <body>
   <header>
     <div class="wrap">
-      <h1>Ergebnisse / Bestenliste 2023</h1>
-      <div class="subtitle">Kreisleichtathletikverband Holzminden · Stand: <strong>03.10.2023</strong></div>
+      <a id="top"></a>
+      <h1>Bestenliste 2023 – Kreis Holzminden</h1>
+      <div class="subtitle">Niedersächsischer Leichtathletik-Verband · <span class="mono">2023_BL_KLV</span> · Stand: <strong>03.10.2023</strong></div>
+
       <div class="toolbar">
-        <label class="search">
-          <span>🔍</span>
+        <label class="search" aria-label="Ergebnisse durchsuchen">
+          <span aria-hidden="true">🔍</span>
           <input id="search" type="search" placeholder="Suche nach Name, Verein, Disziplin…" />
         </label>
-        <a class="download" href="/assets/2023_BL_KLV.pdf" download>📄 PDF herunterladen</a>
       </div>
-      <nav class="toc">
+
+      <nav class="toc" aria-label="Inhaltsverzeichnis">
         <a class="chip" href="#maenner">Männer</a>
         <a class="chip" href="#frauen">Frauen</a>
-        <a class="chip" href="#u20m">U20 M</a>
-        <a class="chip" href="#u18w">U18 W</a>
-        <a class="chip" href="#senioren">Senioren</a>
+        <a class="chip" href="#u20m">Männliche Jugend U20</a>
+        <a class="chip" href="#u18m">Männliche Jugend U18</a>
+        <a class="chip" href="#u20w">Weibliche Jugend U20</a>
+        <a class="chip" href="#u18w">Weibliche Jugend U18</a>
+        <a class="chip" href="#w16">Weibliche Jugend U16</a>
+        <a class="chip" href="#w15">Jugend W15</a>
+        <a class="chip" href="#w14">Jugend W14</a>
+        <a class="chip" href="#w13">Jugend W13</a>
+        <a class="chip" href="#w12">Jugend W12</a>
+        <a class="chip" href="#sen_m50">Senioren M50</a>
+        <a class="chip" href="#sen_m60">Senioren M60</a>
+        <a class="chip" href="#sen_m80">Senioren M80</a>
+        <a class="chip" href="#sen_m85">Senioren M85</a>
+        <a class="chip" href="#sen_w30">Seniorinnen W30</a>
+        <a class="chip" href="#sen_w65">Seniorinnen W65</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap" id="top">
+  <main class="wrap">
 
+    <!-- Männer -->
     <section id="maenner">
       <h2>Männer</h2>
-      <div class="meta">Beispieldaten aus der Kreisbestenliste</div>
-      <div class="event-title">400 m Hürden</div>
-      <table>
-        <thead><tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr></thead>
-        <tbody>
-          <tr><td>66,23</td><td>Luca Tristan Göhmann</td><td>2003</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
-        </tbody>
-      </table>
+      <div class="event-title">400 m Hürden (0,914 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>66,23</td><td>Göhmann, Luca Tristan</td><td>2003</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+      </tbody></table>
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
     </section>
 
+    <!-- Frauen -->
     <section id="frauen">
       <h2>Frauen</h2>
-      <div class="event-title">400 m Hürden</div>
-      <table>
-        <thead><tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr></thead>
-        <tbody>
-          <tr><td>65,96</td><td>Nele Fasold</td><td>2004</td><td>TV 87 Stadtoldendorf</td><td>Lübeck</td><td>24.06.</td></tr>
-        </tbody>
-      </table>
-    </section>
 
-    <section id="u20m">
-      <h2>U20 männlich</h2>
-      <div class="event-title">100 m</div>
-      <table>
-        <thead><tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr></thead>
-        <tbody>
-          <tr><td>11,76</td><td>+1,5</td><td>Maximilian Schneider</td><td>2005</td><td>MTV 49 Holzminden</td><td>Garbsen</td><td>25.07.</td></tr>
-        </tbody>
-      </table>
-    </section>
+      <div class="event-title">100 m Hürden (0,838 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>14,79</td><td>-0,7</td><td>Fasold, Nele</td><td>2004</td><td>TV 87 Stadtoldendorf</td><td>Lübeck</td><td>25.06.</td></tr>
+      </tbody></table>
 
-    <section id="u18w">
-      <h2>U18 weiblich</h2>
+      <div class="event-title">400 m Hürden (0,762 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>65,96</td><td>Fasold, Nele</td><td>2004</td><td>TV 87 Stadtoldendorf</td><td>Lübeck</td><td>24.06.</td></tr>
+      </tbody></table>
+
       <div class="event-title">Stabhochsprung</div>
-      <table>
-        <thead><tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr></thead>
-        <tbody>
-          <tr><td>3,61</td><td>Klara Härke</td><td>2007</td><td>MTV 49 Holzminden</td><td>Beckum</td><td>10.09.</td></tr>
-        </tbody>
-      </table>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>3,00</td><td>Weinert, Marlen Sophie</td><td>1997</td><td>MTV 49 Holzminden</td><td>Braunschweig</td><td>17.06.</td></tr>
+        <tr><td>2,71</td><td>Büsel, Yasemin</td><td>2000</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>02.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Weitsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>4,85</td><td>+0,0</td><td>Just, Johanna</td><td>2002</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>4,07</td><td>+0,0</td><td>Frank, Elisabeth</td><td>2003</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Kugelstoß (4 kg)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>7,83</td><td>Just, Johanna</td><td>2002</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
     </section>
 
-    <section id="senioren">
-      <h2>Senioren</h2>
-      <div class="event-title">M50 – Diskuswurf</div>
-      <table>
-        <thead><tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr></thead>
-        <tbody>
-          <tr><td>38,03</td><td>Frank Sander</td><td>1973</td><td>MTV 49 Holzminden</td><td>Höxter</td><td>02.09.</td></tr>
-        </tbody>
-      </table>
+    <!-- Männliche Jugend U20 -->
+    <section id="u20m">
+      <h2>Männliche Jugend U20</h2>
+
+      <div class="event-title">100 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>11,76</td><td>+1,5</td><td>Schneider, Maximilian</td><td>2004</td><td>MTV 49 Holzminden</td><td>Garbsen</td><td>25.07.</td></tr>
+        <tr><td>11,86</td><td>+0,0</td><td>Schneider, Maximilian</td><td>2005</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+        <tr><td>13,03</td><td>-0,8</td><td>Preußing, Robin</td><td>2005</td><td>MTV 49 Holzminden</td><td>Recklinghausen</td><td>29.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">200 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>24,09</td><td>+0,3</td><td>Schneider, Maximilian</td><td>2005</td><td>MTV 49 Holzminden</td><td>Edemissen</td><td>26.08.</td></tr>
+        <tr><td>25,00</td><td>-2,0</td><td>Meyer, Janik</td><td>2005</td><td>MTV 49 Holzminden</td><td>Edemissen</td><td>26.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">400 m Hürden (0,914 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>63,54</td><td>Kuhnt, Julian</td><td>2004</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Stabhochsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>4,33</td><td>Meyer, Janik</td><td>2005</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>27.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Weitsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>5,58</td><td>+0,2</td><td>Schneider, Maximilian</td><td>2005</td><td>MTV 49 Holzminden</td><td>Garbsen</td><td>25.07.</td></tr>
+        <tr><td>5,54</td><td>+0,0</td><td>Meyer, Janik</td><td>2005</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>5,32</td><td>+0,0</td><td>Preußing, Robin</td><td>2005</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Dreisprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>11,77</td><td>+1,6</td><td>Schneider, Maximilian</td><td>2005</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Kugelstoß (6 kg)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>12,94</td><td>Preußing, Robin</td><td>2005</td><td>MTV 49 Holzminden</td><td>Göttingen</td><td>30.09.</td></tr>
+        <tr><td>9,30</td><td>Meyer, Janik</td><td>2005</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>8,46</td><td>Schneider, Maximilian</td><td>2005</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Speerwurf (800 g)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>54,96</td><td>Preußing, Robin</td><td>2005</td><td>MTV 49 Holzminden</td><td>Verden</td><td>11.06.</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
     </section>
 
-    <p class="note">Hinweis: Diese Seite ist ein Auszug. Die vollständige Kreisbestenliste 2023 steht als PDF zur Verfügung.</p>
+    <!-- Männliche Jugend U18 -->
+    <section id="u18m">
+      <h2>Männliche Jugend U18</h2>
+
+      <div class="event-title">100 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>11,07</td><td>+0,0</td><td>Kedzierski, Samuel</td><td>2006</td><td>TV 87 Stadtoldendorf</td><td>Sarstedt</td><td>20.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">200 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>22,78</td><td>-0,5</td><td>Kedzierski, Samuel</td><td>2006</td><td>TV 87 Stadtoldendorf</td><td>Sarstedt</td><td>20.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">110 m Hürden (0,914 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>15,16</td><td>+0,2</td><td>Kedzierski, Samuel</td><td>2006</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Weitsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>6,06</td><td>+0,1</td><td>Kedzierski, Samuel</td><td>2006</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+        <tr><td>4,78</td><td>+0,0</td><td>Titze, Jasper</td><td>2007</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Dreisprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>10,05</td><td>+1,4</td><td>Titze, Jasper</td><td>2007</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Kugelstoß (5 kg)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>5,46</td><td>Titze, Jasper</td><td>2007</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Weibliche Jugend U20 -->
+    <section id="u20w">
+      <h2>Weibliche Jugend U20</h2>
+
+      <div class="event-title">100 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>13,56</td><td>+0,1</td><td>Steingräber, Susan</td><td>2004</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+        <tr><td>14,08</td><td>-2,1</td><td>Moszczynski, Pia</td><td>2004</td><td>MTV 49 Holzminden</td><td>Garbsen</td><td>07.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">200 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>26,79</td><td>+0,6</td><td>Fasold, Nele</td><td>2004</td><td>TV 87 Stadtoldendorf</td><td>Garbsen</td><td>07.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">400 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>62,79</td><td>Fasold, Nele</td><td>2004</td><td>TV 87 Stadtoldendorf</td><td>Garbsen</td><td>07.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">100 m Hürden (0,838 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>14,82</td><td>+1,0</td><td>Fasold, Nele</td><td>2004</td><td>TV 87 Stadtoldendorf</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">400 m Hürden (0,762 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>64,58</td><td>Fasold, Nele</td><td>2004</td><td>TV 87 Stadtoldendorf</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+        <tr><td>76,22</td><td>Steingräber, Susan</td><td>2004</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">4 × 100 m Staffel</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Verein</th><th>Ort</th><th>Datum</th><th>Staffel</th></tr>
+      </thead><tbody>
+        <tr>
+          <td>54,25</td><td>MTV 49 Holzminden</td><td>Garbsen</td><td>07.05.</td>
+          <td>Süßmilch, Lucy (2006); Moszczynski, Pia (2004); Steingräber, Susan (2004); Grupe, Sarah (2005)</td>
+        </tr>
+      </tbody></table>
+
+      <div class="event-title">Stabhochsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>3,10</td><td>Moszczynski, Pia</td><td>2004</td><td>MTV 49 Holzminden</td><td>Lübeck</td><td>25.06.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Weitsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>5,22</td><td>-1,5</td><td>Fasold, Nele</td><td>2004</td><td>TV 87 Stadtoldendorf</td><td>Verden</td><td>11.06.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Speerwurf (600 g)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>27,77</td><td>Fasold, Nele</td><td>2004</td><td>TV 87 Stadtoldendorf</td><td>Hannover</td><td>13.05.</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Weibliche Jugend U18 -->
+    <section id="u18w">
+      <h2>Weibliche Jugend U18</h2>
+
+      <div class="event-title">100 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>13,29</td><td>+0,5</td><td>Reinert, Isa Mariann</td><td>2006</td><td>TV 87 Stadtoldendorf</td><td>Lübeck</td><td>24.06.</td></tr>
+        <tr><td>13,61</td><td>+0,8</td><td>Süßmilch, Lucy</td><td>2006</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+        <tr><td>13,65</td><td>+0,1</td><td>Unverzagt, Tanja</td><td>2006</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+        <tr><td>13,81</td><td>-1,2</td><td>Maiwald, Paulina</td><td>2007</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+        <tr><td>13,84</td><td>-0,4</td><td>Härke, Klara</td><td>2007</td><td>MTV 49 Holzminden</td><td>Edemissen</td><td>26.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">200 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>27,89</td><td>-0,7</td><td>Reinert, Isa Mariann</td><td>2006</td><td>TV 87 Stadtoldendorf</td><td>Lübeck</td><td>25.06.</td></tr>
+        <tr><td>29,37</td><td>+0,5</td><td>Maiwald, Paulina</td><td>2007</td><td>TV 87 Stadtoldendorf</td><td>Sarstedt</td><td>20.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">100 m Hürden (0,762 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>16,73</td><td>-1,5</td><td>Unverzagt, Tanja</td><td>2006</td><td>MTV 49 Holzminden</td><td>Edemissen</td><td>26.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">400 m Hürden (0,762 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>73,58</td><td>Reinert, Isa Mariann</td><td>2006</td><td>TV 87 Stadtoldendorf</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Hochsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>1,60</td><td>Härke, Klara</td><td>2007</td><td>MTV 49 Holzminden</td><td>Löningen</td><td>28.06.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Stabhochsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>3,61</td><td>Härke, Klara</td><td>2007</td><td>MTV 49 Holzminden</td><td>Beckum</td><td>10.09.</td></tr>
+        <tr><td>3,61</td><td>Unverzagt, Tanja</td><td>2006</td><td>MTV 49 Holzminden</td><td>Beckum</td><td>10.09.</td></tr>
+        <tr><td>3,33</td><td>Rathmann, Lilly</td><td>2007</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>27.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Weitsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>5,25</td><td>+0,0</td><td>Unverzagt, Tanja</td><td>2006</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>5,10</td><td>+0,0</td><td>Härke, Klara</td><td>2007</td><td>MTV 49 Holzminden</td><td>Löningen</td><td>28.06.</td></tr>
+        <tr><td>4,81</td><td>+0,0</td><td>Rathmann, Lilly</td><td>2007</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>4,28</td><td>+0,5</td><td>Maiwald, Paulina</td><td>2007</td><td>TV 87 Stadtoldendorf</td><td>Garbsen</td><td>07.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Kugelstoß (3 kg)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>11,02</td><td>Reinert, Isa Mariann</td><td>2006</td><td>TV 87 Stadtoldendorf</td><td>Sarstedt</td><td>16.09.</td></tr>
+        <tr><td>9,21</td><td>Rathmann, Lilly</td><td>2007</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>9,12</td><td>Unverzagt, Tanja</td><td>2006</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>7,53</td><td>Maiwald, Paulina</td><td>2007</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Speerwurf (500 g)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>32,90</td><td>Unverzagt, Tanja</td><td>2006</td><td>MTV 49 Holzminden</td><td>Recklinghausen</td><td>29.05.</td></tr>
+        <tr><td>31,94</td><td>Härke, Klara</td><td>2007</td><td>MTV 49 Holzminden</td><td>Hannover</td><td>17.05.</td></tr>
+        <tr><td>26,44</td><td>Reinert, Isa Mariann</td><td>2006</td><td>TV 87 Stadtoldendorf</td><td>Sarstedt</td><td>16.09.</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Weibliche Jugend U16 -->
+    <section id="w16">
+      <h2>Weibliche Jugend U16</h2>
+      <div class="event-title">4 × 100 m Staffel</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Verein</th><th>Ort</th><th>Datum</th><th>Staffel</th></tr>
+      </thead><tbody>
+        <tr>
+          <td>56,76</td><td>MTV 49 Holzminden</td><td>Edemissen</td><td>26.08.</td>
+          <td>Hennigfeld, Friederike (2009); Rieger, Anna (2009); Thimm, Julika (2008); Wendt, Emma Wolke (2009)</td>
+        </tr>
+      </tbody></table>
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Jugend W15 -->
+    <section id="w15">
+      <h2>Jugend W15</h2>
+
+      <div class="event-title">100 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>13,99</td><td>+0,9</td><td>Puschendorf, Carolin</td><td>2008</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+        <tr><td>15,33</td><td>-1,6</td><td>Robelski, Laura</td><td>2008</td><td>MTV 49 Holzminden</td><td>Hamburg</td><td>23.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">300 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>46,87</td><td>Puschendorf, Carolin</td><td>2008</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Stabhochsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>3,05</td><td>Thimm, Julika</td><td>2008</td><td>MTV 49 Holzminden</td><td>Hamburg</td><td>23.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Weitsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>4,64</td><td>-0,2</td><td>Puschendorf, Carolin</td><td>2008</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+        <tr><td>4,63</td><td>+0,0</td><td>Thimm, Julika</td><td>2008</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Kugelstoß (3 kg)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>7,78</td><td>Puschendorf, Carolin</td><td>2008</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+        <tr><td>6,57</td><td>Thimm, Julika</td><td>2008</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Jugend W14 -->
+    <section id="w14">
+      <h2>Jugend W14</h2>
+
+      <div class="event-title">100 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>13,13</td><td>+0,3</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Verden</td><td>11.06.</td></tr>
+        <tr><td>13,75</td><td>-0,2</td><td>Rieger, Anna</td><td>2009</td><td>MTV 49 Holzminden</td><td>Hamburg</td><td>23.09.</td></tr>
+        <tr><td>14,13</td><td>+0,0</td><td>Pagel, Amelie</td><td>2009</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td></tr>
+        <tr><td>14,39</td><td>-0,4</td><td>Bernau, Charlotte</td><td>2009</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+        <tr><td>14,58</td><td>-0,9</td><td>Hennigfeld, Friederike</td><td>2009</td><td>MTV 49 Holzminden</td><td>Edemissen</td><td>26.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">300 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>48,25</td><td>Bernau, Charlotte</td><td>2009</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">80 m Hürden (0,762 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>13,53</td><td>+1,4</td><td>Rieger, Anna</td><td>2009</td><td>MTV 49 Holzminden</td><td>Edemissen</td><td>26.08.</td></tr>
+        <tr><td>14,77</td><td>+0,2</td><td>Hennigfeld, Friederike</td><td>2009</td><td>MTV 49 Holzminden</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Stabhochsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>3,31</td><td>Rieger, Anna</td><td>2009</td><td>MTV 49 Holzminden</td><td>Oldenburg</td><td>20.05.</td></tr>
+        <tr><td>2,80</td><td>Hennigfeld, Friederike</td><td>2009</td><td>MTV 49 Holzminden</td><td>Hamburg</td><td>18.06.</td></tr>
+        <tr><td>1,96</td><td>Wendt, Emma Wolke</td><td>2009</td><td>MTV 49 Holzminden</td><td>Edemissen</td><td>26.08.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Weitsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>5,06</td><td>+0,0</td><td>Rieger, Anna</td><td>2009</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>4,36</td><td>+0,0</td><td>Hennigfeld, Friederike</td><td>2009</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>4,17</td><td>-0,2</td><td>Bernau, Charlotte</td><td>2009</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+        <tr><td>3,93</td><td>+0,0</td><td>Wendt, Emma Wolke</td><td>2009</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>3,88</td><td>+0,8</td><td>Pagel, Amelie</td><td>2009</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Kugelstoß (3 kg)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>7,59</td><td>Wendt, Emma Wolke</td><td>2009</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>6,68</td><td>Bernau, Charlotte</td><td>2009</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+        <tr><td>6,56</td><td>Hennigfeld, Friederike</td><td>2009</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>6,35</td><td>Rieger, Anna</td><td>2009</td><td>MTV 49 Holzminden</td><td>Holzminden</td><td>23.08.</td></tr>
+        <tr><td>5,90</td><td>Pagel, Amelie</td><td>2009</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">3-Kampf (100 m – Weit – Kugel 3 kg)</div>
+      <table><thead>
+        <tr><th>Punkte</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th><th>Zusammensetzung</th></tr>
+      </thead><tbody>
+        <tr><td>1.177</td><td>Pagel, Amelie</td><td>2009</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td><td>14,13 (+0,0) – 3,88 (+0,8) – 5,90</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Jugend W13 -->
+    <section id="w13">
+      <h2>Jugend W13</h2>
+
+      <div class="event-title">75 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>9,91</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Nienhagen</td><td>17.05.</td></tr>
+        <tr><td>11,83</td><td>Bernau, Johanna</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Nienhagen</td><td>17.05.</td></tr>
+        <tr><td>11,88</td><td>Meyer, Jette</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">100 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>13,22</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Nienhagen</td><td>17.05.</td></tr>
+        <tr><td>15,76</td><td>Bernau, Johanna</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Nienhagen</td><td>17.05.</td></tr>
+        <tr><td>15,81</td><td>Meyer, Jette</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Nienhagen</td><td>17.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">800 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>2:34,96</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+        <tr><td>2:58,34</td><td>Bernau, Johanna</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">60 m Hürden (0,762 m)</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>10,85</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Bad Harzburg</td><td>01.05.</td></tr>
+        <tr><td>11,37</td><td>Meyer, Jette</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+        <tr><td>13,22</td><td>Bernau, Johanna</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Hochsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>1,54</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Stuhr-Moordeich</td><td>23.09.</td></tr>
+        <tr><td>1,20</td><td>Meyer, Jette</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Hameln</td><td>21.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Weitsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Wind</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>4,66</td><td>–</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Sarstedt</td><td>20.08.</td></tr>
+        <tr><td>3,85</td><td>+0,0</td><td>Bernau, Johanna</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Einbeck</td><td>03.09.</td></tr>
+        <tr><td>3,71</td><td>–</td><td>Meyer, Jette</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Kugelstoß (3 kg)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>7,82</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Stuhr-Moordeich</td><td>23.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Speerwurf (400 g)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>15,95</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Stuhr-Moordeich</td><td>23.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Ballwurf (200 g)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>23,50</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Sarstedt</td><td>07.05.</td></tr>
+        <tr><td>22,50</td><td>Meyer, Jette</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">3-Kampf (75 m – Weit – Ball)</div>
+      <table><thead>
+        <tr><th>Punkte</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th><th>Zusammensetzung</th></tr>
+      </thead><tbody>
+        <tr><td>1.303</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Hameln</td><td>21.05.</td><td>10,12 – 4,40 – 21,00</td></tr>
+        <tr><td>1.032</td><td>Meyer, Jette</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td><td>12,37 – 3,71 – 22,50</td></tr>
+      </tbody></table>
+
+      <div class="event-title">4-Kampf (75 m – Weit – Hoch – Ball)</div>
+      <table><thead>
+        <tr><th>Punkte</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th><th>Zusammensetzung</th></tr>
+      </thead><tbody>
+        <tr><td>1.766</td><td>Lucya, Fiona Antonia</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Sarstedt</td><td>07.05.</td><td>10,20 – 4,00 – 1,48 – 23,50</td></tr>
+        <tr><td>1.313</td><td>Meyer, Jette</td><td>2010</td><td>TV 87 Stadtoldendorf</td><td>Hameln</td><td>21.05.</td><td>12,01 – 3,39 – 1,20 – 20,50</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Jugend W12 -->
+    <section id="w12">
+      <h2>Jugend W12</h2>
+
+      <div class="event-title">50 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>8,29</td><td>Konath, Lea</td><td>2011</td><td>TV 87 Stadtoldendorf</td><td>Nienhagen</td><td>17.05.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">75 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>11,98</td><td>Konath, Lea</td><td>2011</td><td>TV 87 Stadtoldendorf</td><td>Nienhagen</td><td>17.05.</td></tr>
+        <tr><td>12,90</td><td>Smetana, Helene</td><td>2011</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Weitsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>3,38</td><td>Smetana, Helene</td><td>2011</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Ballwurf (200 g)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>12,00</td><td>Smetana, Helene</td><td>2011</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">3-Kampf (75 m – Weit – Ball)</div>
+      <table><thead>
+        <tr><th>Punkte</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th><th>Zusammensetzung</th></tr>
+      </thead><tbody>
+        <tr><td>830</td><td>Smetana, Helene</td><td>2011</td><td>TV 87 Stadtoldendorf</td><td>Uslar</td><td>07.07.</td><td>12,90 – 3,38 – 12,00</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Senioren M50 -->
+    <section id="sen_m50">
+      <h2>Senioren M50</h2>
+
+      <div class="event-title">Diskuswurf (1,5 kg)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>38,03</td><td>Sander, Frank</td><td>1973</td><td>MTV 49 Holzminden</td><td>Höxter</td><td>02.09.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">Speerwurf (700 g)</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>39,19</td><td>Sander, Frank</td><td>1973</td><td>MTV 49 Holzminden</td><td>Höxter</td><td>02.09.</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Senioren M60 -->
+    <section id="sen_m60">
+      <h2>Senioren M60</h2>
+
+      <div class="event-title">1500 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>8:31,1</td><td>Kopp, Andreas</td><td>1961</td><td>Post-SV Holzminden</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">1 Meile</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>9:10,6</td><td>Kopp, Andreas</td><td>1961</td><td>Post-SV Holzminden</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Senioren M80 -->
+    <section id="sen_m80">
+      <h2>Senioren M80</h2>
+
+      <div class="event-title">1500 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>9:02,8</td><td>Ebeling, Rudolf</td><td>1939</td><td>Post-SV Holzminden</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">1 Meile</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>9:43,2</td><td>Ebeling, Rudolf</td><td>1939</td><td>Post-SV Holzminden</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Senioren M85 -->
+    <section id="sen_m85">
+      <h2>Senioren M85</h2>
+      <div class="event-title">1 Meile</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>14:25,1</td><td>Bettermann, Edgar</td><td>1936</td><td>Post-SV Holzminden</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Seniorinnen W30 -->
+    <section id="sen_w30">
+      <h2>Seniorinnen W30</h2>
+      <div class="event-title">Stabhochsprung</div>
+      <table><thead>
+        <tr><th>Leistung</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>4,20</td><td>Roloff, Annika</td><td>1991</td><td>MTV 49 Holzminden</td><td>Königs Wusterhausen</td><td>03.06.</td></tr>
+      </tbody></table>
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <!-- Seniorinnen W65 -->
+    <section id="sen_w65">
+      <h2>Seniorinnen W65</h2>
+
+      <div class="event-title">1500 m</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>7:51,7</td><td>Dorusch, Elke</td><td>1954</td><td>Post-SV Holzminden</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="event-title">1 Meile</div>
+      <table><thead>
+        <tr><th>Zeit</th><th>Name</th><th>Jg.</th><th>Verein</th><th>Ort</th><th>Datum</th></tr>
+      </thead><tbody>
+        <tr><td>8:23,5</td><td>Dorusch, Elke</td><td>1954</td><td>Post-SV Holzminden</td><td>Uslar</td><td>07.07.</td></tr>
+      </tbody></table>
+
+      <div class="backtop"><a href="#top">↑ nach oben</a></div>
+    </section>
+
+    <p class="note">Hinweis: Windangaben sind, sofern vorhanden, gemäß Originaldaten aufgeführt. Bindestriche (–) bedeuten „keine Angabe“.</p>
   </main>
+
+  <footer>
+    Erstellt mit <strong>COSA WIN 3.3.9.1 / 2.2.9.1</strong> — COSA-Software, Berggartenstr. 5a, D-38271 Baddeckenstedt ·
+    E-Mail: renziesoft@aol.com · Home-Page: www.cosa-software.de ·
+    Lizenziert für: <strong>NI/3600 KLV Holzminden</strong> – angezeigter Inhalt
+  </footer>
 
   <script>
     // Einfache Client-Suche über alle Tabellenzeilen
     (function(){
       const q = document.getElementById('search');
+      if(!q) return;
       const rows = Array.from(document.querySelectorAll('tbody tr'));
       function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,''); }
       q.addEventListener('input', () => {
@@ -165,4 +831,4 @@
   </script>
 </body>
 </html>
-px;background:#0b1220;b
+
