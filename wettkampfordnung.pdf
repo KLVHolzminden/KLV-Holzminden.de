@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ergebnis Kinder‑Einzel 24.05.2024 – KLV Holzminden</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1, h2 { margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: #f1f5f9; }
+  </style>
+</head>
+<body>
+  <h1>KLV Holzminden e.V.</h1>
+  <h2>Kinder‑Einzel – Ergebnisliste</h2>
+  <p><strong>Datum:</strong> 24.05.2024</p>
+  <p><strong>Ort:</strong> Holzminden – Stadion Liebigstraße</p>
+  <p>Dies ist eine beispielhafte Ergebnisliste. Die vollständigen Ergebnisse können Sie auf der ehemaligen Website oder in den offiziellen Protokollen nachlesen.</p>
+  
+  <h3>Kinder M11 – 50 m</h3>
+  <table>
+    <thead>
+      <tr><th>Platz</th><th>Name</th><th>Verein</th><th>Leistung</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1.</td><td>Liam Hüten</td><td>TV 87 Stadtoldendorf</td><td>8,29&nbsp;sec</td></tr>
+      <tr><td>2.</td><td>Elia Löwens</td><td>TV 87 Stadtoldendorf</td><td>8,47&nbsp;sec</td></tr>
+      <tr><td>3.</td><td>Max Hofbauer</td><td>TV 87 Stadtoldendorf</td><td>8,55&nbsp;sec</td></tr>
+    </tbody>
+  </table>
+  
+  <h3>Kinder M11 – Weitsprung Zone</h3>
+  <table>
+    <thead>
+      <tr><th>Platz</th><th>Name</th><th>Verein</th><th>Bestweite</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1.</td><td>Liam Hüten</td><td>TV 87 Stadtoldendorf</td><td>3,60&nbsp;m</td></tr>
+      <tr><td>2.</td><td>Elia Löwens</td><td>TV 87 Stadtoldendorf</td><td>3,33&nbsp;m</td></tr>
+      <tr><td>3.</td><td>Max Hofbauer</td><td>TV 87 Stadtoldendorf</td><td>3,26&nbsp;m</td></tr>
+    </tbody>
+  </table>
+  <p>Weitere Disziplinen und Altersklassen folgen.</p>
+</body>
+</html>

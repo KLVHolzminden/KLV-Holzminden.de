@@ -4,11 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <title>Termine – KLV Holzminden</title>
-  <meta name="description" content="Wettkämpfe, Meisterschaften, Aus- und Fortbildungen im Kreis Holzminden: aktuelle Termine des KLV." />
-  <link rel="canonical" href="https://klv-holzminden.de/termine.html" />
+  <title>Kontakt – KLV Holzminden</title>
+  <meta name="description" content="Kontakt zum Kreisleichtathletikverband Holzminden: E‑Mail und Kontaktformular." />
+  <link rel="canonical" href="https://klv-holzminden.de/kontakt.html" />
   <meta name="robots" content="index, follow" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .btn {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    .btn:hover { background: #094fae; }
+    .hint { color: #64748b; font-size: 0.9rem; margin-top: 12px; }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -23,11 +37,11 @@
           <li><a href="index.html">Start</a></li>
           <li><a href="vereine.html">Vereine</a></li>
           <li><a href="verband.html">Verband</a></li>
-          <li><a href="termine.html" class="active">Termine</a></li>
+          <li><a href="termine.html">Termine</a></li>
           <li><a href="vorstand.html">Vorstand</a></li>
           <li><a href="ergebnisse.html">Ergebnisse</a></li>
           <li><a href="downloads.html">Downloads</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt.html" class="active">Kontakt</a></li>
         </ul>
       </nav>
     </div>
@@ -35,23 +49,18 @@
   <main>
     <section class="sections">
       <div class="container">
-        <h2 class="section-title">Termine</h2>
-        <p class="lead">Anstehende Veranstaltungen, Sportfeste und Sitzungen im Kreis Holzminden.</p>
-        <table id="termine-table" class="table">
-          <thead>
-            <tr>
-              <th>Datum</th>
-              <th>Veranstaltung</th>
-              <th>Ort</th>
-              <th>Infos</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-        <p class="notice">Die Termine werden aus der Datei <code>assets/termine.json</code> geladen.</p>
-        <noscript>
-          <p>Die Termine können ohne JavaScript nicht angezeigt werden. Bitte aktivieren Sie JavaScript.</p>
-        </noscript>
+        <h2 class="section-title">Kontakt</h2>
+        <p class="lead">Fragen, Hinweise oder Terminmeldungen? Du erreichst uns direkt per E‑Mail oder über das Kontaktformular.</p>
+        <div class="card">
+          <p><strong>E‑Mail:</strong> <a href="mailto:s.sander@ksbholzminden.de">s.sander@ksbholzminden.de</a></p>
+          <p>
+            <a href="https://forms.office.com/e/0injdVHfmt" target="_blank" rel="noopener" class="btn">Kontaktformular öffnen</a>
+          </p>
+          <p class="hint">
+            Das Formular wird in einem neuen Fenster geöffnet und über Microsoft Forms bereitgestellt.
+            Mit dem Absenden stimmst du der Verarbeitung gemäß <a href="datenschutz.html">Datenschutzerklärung</a> zu.
+          </p>
+        </div>
       </div>
     </section>
   </main>
@@ -77,6 +86,5 @@
       });
     }
   </script>
-  <script src="js/termine.js"></script>
 </body>
 </html>

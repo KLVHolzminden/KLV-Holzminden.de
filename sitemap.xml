@@ -1,61 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Startseite -->
-  <url>
-    <loc>https://klv-holzminden-de.vercel.app/</loc>
-    <lastmod>2025-10-20</lastmod>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Unterseiten -->
-  <url>
-    <loc>https://klv-holzminden-de.vercel.app/kontakt.html</loc>
-    <lastmod>2025-10-20</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://klv-holzminden-de.vercel.app/verein.html</loc>
-    <lastmod>2025-10-20</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://klv-holzminden-de.vercel.app/verband.html</loc>
-    <lastmod>2025-10-20</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://klv-holzminden-de.vercel.app/termine.html</loc>
-    <lastmod>2025-10-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://klv-holzminden-de.vercel.app/ergebnisse.html</loc>
-    <lastmod>2025-10-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://klv-holzminden-de.vercel.app/downloads.html</loc>
-    <lastmod>2025-10-20</lastmod>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Rechtliches -->
-  <url>
-    <loc>https://klv-holzminden-de.vercel.app/impressum.html</loc>
-    <lastmod>2025-10-20</lastmod>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://klv-holzminden-de.vercel.app/datenschutz.html</loc>
-    <lastmod>2025-10-20</lastmod>
-    <priority>0.3</priority>
-  </url>
-
-</urlset>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <title>KLV Holzminden – Start</title>
+  <meta name="description" content="Offizielle Website des KLV Holzminden. Aktuelle Termine, Ergebnisse und Informationen zum Kreisleichtathletikverband Holzminden." />
+  <link rel="canonical" href="https://klv-holzminden.de/" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="KLV Holzminden – Kreisleichtathletik-Verband" />
+  <meta property="og:description" content="Regionaler Vertreter des NLV: Vereine fördern, Aus‑ &amp; Fortbildung, Leistungssport, Wettkämpfe, Interessenvertretung." />
+  <meta property="og:url" content="https://klv-holzminden.de/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KLV Holzminden" />
+  <meta property="og:image" content="assets/logo01.jpg" />
+  
+  <!-- Strukturierte Daten -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Kreisleichtathletik-Verband Holzminden (KLV)",
+      "url": "https://klv-holzminden.de/",
+      "logo": "assets/logo01.jpg",
+      "sport": "Leichtathletik",
+      "areaServed": "Landkreis Holzminden, Niedersachsen, Deutschland",
+      "parentOrganization": {
+        "@type": "SportsOrganization",
+        "name": "Niedersächsischer Leichtathletik-Verband (NLV)"
+      }
+    }
+  </script>
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Startseite KLV Holzminden">
+        <img src="assets/favicon.png" alt="Logo KLV Holzminden" class="brand-logo" />
+        <span class="brand-name">KLV Holzminden</span>
+      </a>
+      <button class="nav-toggle" aria-controls="main-menu" aria-expanded="false" aria-label="Menü öffnen/schließen">☰</button>
+      <nav id="main-menu" class="main-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html" class="active">Start</a></li>
+          <li><a href="vereine.html">Vereine</a></li>
+          <li><a href="verband.html">Verband</a></li>
+          <li><a href="termine.html">Termine</a></li>
+          <li><a href="vorstand.html">Vorstand</a></li>
+          <li><a href="ergebnisse.html">Ergebnisse</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <p class="kicker">KLV Holzminden</p>
+          <h2>Leichtathletik im Landkreis Holzminden</h2>
+          <p class="lead">Aktuelles, Termine, Ergebnisse und Informationen zum Kreisleichtathletikverband Holzminden.</p>
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn" href="termine.html">Zu den Terminen</a>
+            <a class="btn outline" href="ergebnisse.html">Ergebnisse &amp; Bestenlisten</a>
+          </div>
+        </div>
+        <div class="heroimg">
+          <img src="assets/logo01.jpg" alt="Kreisleichtathletikverband Holzminden Logo" style="object-fit:contain; background:white; border-radius:8px; padding:10px; max-height:140px;" />
+        </div>
+      </div>
+    </section>
+    <section class="sections">
+      <div class="container grid col3">
+        <div class="card">
+          <h3>Neuigkeiten</h3>
+          <p>Kurze Meldungen zu Veranstaltungen im Kreis. (Diese Box lässt sich später mit echten News füllen.)</p>
+        </div>
+        <div class="card">
+          <h3>Wettkämpfe &amp; Termine</h3>
+          <p>Nächste Sportfeste, Kreismeisterschaften, Kampfrichter-Fortbildungen.</p>
+          <div class="notice">Platzhalterliste in <a href="termine.html">Termine</a>.</div>
+        </div>
+        <div class="card">
+          <h3>Ergebnisse</h3>
+          <p>Links zu Ergebnislisten, Kreis- und Bezirksbestenlisten sowie Rekorden.</p>
+          <div class="notice">Vorlage in <a href="ergebnisse.html">Ergebnisse</a>.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="container">
+      <p><strong>Kreisleichtathletikverband Holzminden (KLV)</strong><br />
+      Informationen zum Leichtathletik‑Sport im Landkreis Holzminden.</p>
+      <p>
+        <a href="impressum.html">Impressum</a> · 
+        <a href="datenschutz.html">Datenschutz</a> · 
+        <a href="mailto:s.sander@ksbholzminden.de">Kontakt</a>
+      </p>
+    </div>
+  </footer>
+  <script>
+    // Navigation / Hamburger-Funktion
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('#main-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const open = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+  </script>
+</body>
+</html>

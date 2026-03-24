@@ -1,0 +1,20 @@
+[
+  {
+    "datum": "2024-05-10",
+    "veranstaltung": "Kreismeisterschaften Jugend",
+    "ort": "Holzminden",
+    "infos": "assets/Ergebnis_2024-05-10_KM_Jugend.pdf"
+  },
+  {
+    "datum": "2024-05-24",
+    "veranstaltung": "Kinder‑Einzel",
+    "ort": "Holzminden, Stadion Liebigstraße",
+    "infos": "assets/Ergebnis_2024-05-24_KinderEinzel.html"
+  },
+  {
+    "datum": "2024-09-15",
+    "veranstaltung": "Crosslauf Holzminden",
+    "ort": "Holzminden",
+    "infos": "assets/Ergebnis_Crosslauf_Holzminden_2024.pdf"
+  }
+]
