@@ -1,27 +1,167 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kreisrekorde – KLV Holzminden</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    th { background: #f1f5f9; }
-  </style>
-</head>
-<body>
-  <h1>Kreisrekorde</h1>
-  <p>Diese Datei führt die offiziellen Kreisrekorde des KLV Holzminden. Ergänzen Sie für jede Disziplin die aktuell gültigen Rekordleistungen.</p>
-  <table>
-    <thead>
-      <tr><th>Disziplin</th><th>Geschlecht</th><th>Leistung</th><th>Name</th><th>Verein</th><th>Jahr</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>100&nbsp;m</td><td>Männer</td><td>10,86&nbsp;sec</td><td>Max Beispiel</td><td>TV 87 Stadtoldendorf</td><td>2022</td></tr>
-      <tr><td>Weitsprung</td><td>Frauen</td><td>6,10&nbsp;m</td><td>Anna Muster</td><td>MTV Holzminden</td><td>2021</td></tr>
-    </tbody>
-  </table>
-</body>
-</html>
+/* General Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+a {
+  color: #0d47a1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+  background: #ffffff;
+  border-bottom: 3px solid #0d47a1;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  margin-right: 0.5rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  padding: 0.5rem 0;
+  color: #0d47a1;
+  font-weight: 500;
+}
+
+.main-nav a.active {
+  border-bottom: 3px solid #c62828;
+  color: #c62828;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%);
+  color: #ffffff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  font-size: 1.125rem;
+}
+
+/* Card grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #c62828;
+}
+
+.card p {
+  margin: 0.5rem 0 1.5rem;
+  color: #374151;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background: #c62828;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #b71c1c;
+}
+
+/* Sections */
+section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Footer */
+footer.site {
+  background: #0d47a1;
+  color: #ffffff;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+footer.site a {
+  color: #bbdefb;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer.site a:hover {
+  text-decoration: underline;
+}
