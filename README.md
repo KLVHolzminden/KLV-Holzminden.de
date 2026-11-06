@@ -1,28 +1,26 @@
-# KLV Holzminden – Statische Website
+# KLV Holzminden – statische Website
 
-Dies ist eine schlanke, statische Website ohne Build‑Schritt. Ideal für Vercel, Netlify oder GitHub Pages.
-
-## Struktur
-- `index.html` – Startseite
-- `termine.html` – Tabelle aus `assets/termine.json`
-- `ergebnisse.html`
-- `verband.html`
-- `vereine.html` – Karten aus `assets/vereine.json`
-- `downloads.html`
-- `kontakt.html`
-- `impressum.html`, `datenschutz.html`
-- `styles.css` – Design
-- `termine.js`, `vereine.js` – Kleines JS für Datenlisten
-- `assets/` – Dateien & JSON-Daten
-
-## Deployment (Vercel, ohne Konsole)
-1. GitHub‑Konto anlegen (falls noch nicht vorhanden).
-2. Neues Repository erstellen, alle Dateien dieses Ordners hochladen.
-3. Auf https://vercel.com mit GitHub anmelden → **New Project** → Repo auswählen → **Deploy**.
-4. Fertig. Die Seite ist sofort unter einer `*.vercel.app`‑Adresse erreichbar.
-5. Optional: Eigene Domain verbinden.
+HTML, CSS und JavaScript ohne Installation und ohne Build-Schritt. Vercel veröffentlicht das Repository-Verzeichnis.
 
 ## Inhalte pflegen
-- Termine: `assets/termine.json` editieren (Datum, Titel, Ort, Link).
-- Vereine: `assets/vereine.json` ergänzen (Name, Ort, Link).
-- Downloads: Dateien in `assets/` ablegen und in `downloads.html` verlinken.
+- `index.html`: Einstieg für Vereinsvertreter, Sportler und Förderer.
+- `vereine.html`: vollständige vorhandene Vereinsübersicht (17 Vereine), direkt im HTML.
+- `kontakt.html`, `vorstand.html`, `verband.html`: Kontakt und Verbandsinformationen.
+- `termine.html`: Verweise auf KSB-Kalender und Kontakt. Aktuell keine bestätigten Termine hinterlegt.
+- `ergebnisse.html`: Einstieg zu vorhandenen Bestenlisten und Kreisrekorden.
+- `assets/bestenliste_2023.html`, `assets/bestenliste_2024.html`, `assets/kreisrekorde.html`: bestehende Archivlisten.
+- `downloads.html`: verfügbare Listen und Anfrage für fehlende Unterlagen.
+- `impressum.html`, `datenschutz.html`: vorhandene Texte statisch eingebunden.
+- `styles.css`, `navigation.js`: gemeinsames Design und mobile Navigation.
+
+Header und Footer sind statisch in jeder Hauptseite vorhanden. Bei Änderungen an der Navigation alle Hauptseiten berücksichtigen. Die Navigation und die Inhalte funktionieren auch ohne JavaScript.
+
+## Bekannte Inhaltslücken
+Wettkampf-PDFs, Satzung, Wettkampfordnung und weitere Formulare sind im Ausgangsbestand keine verwendbaren Dokumente. Darauf wird nicht als Download verlinkt. Keine Ergebnis-Beispieldaten als tatsächliche Leistungen veröffentlichen. Alte Platzhalterdateien bleiben zur Nachvollziehbarkeit im Repository.
+
+Die wiederhergestellten Vorstandsangaben tragen den vorhandenen Stand 14.11.2024; Aktualität bitte redaktionell prüfen. Impressum und Datenschutzerklärung wurden aus vorhandenen Texten wiederhergestellt, nicht rechtlich neu geprüft. Ihre inhaltliche Aktualisierung für das aktuelle Hosting und das externe Kontaktformular steht aus.
+
+`termine.json` enthält bis zur Pflege bestätigter Termine eine leere Liste. `vereine.json` und ältere Hilfsskripte sind nicht in die Website eingebunden.
+
+## Prüfung
+`node scripts/check-site.mjs` prüft interne Dateiverweise und Sprungmarken, Hauptnavigation, Seitentitel, JSON-Dateien und JavaScript-Syntax.
