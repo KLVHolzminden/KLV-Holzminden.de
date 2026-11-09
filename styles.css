@@ -188,6 +188,9 @@ img { max-width: 100%; }
 .info-note { max-width: 760px; margin: 2rem auto 0; padding: 1.25rem 1.5rem; background: #eaf1fb; border-left: 4px solid #0d47a1; }
 .info-note h2 { margin: 0 0 .35rem; font-size: 1.15rem; color: #0d47a1; }
 .info-note p { margin: .35rem 0; }
+.ladv-frame { display: block; width: 100%; min-height: 720px; margin-top: 1rem; border: 1px solid #d5dbe3; background: #fff; }
+.back-navigation { margin: 0 auto 2rem; max-width: 1200px; padding: 0 1rem; }
+.back-navigation a { font-weight: 600; }
 .card h2 { font-size: 1.3rem; color: #c62828; margin-top: 0; }
 .table-scroll { max-width: 100%; overflow-x: auto; margin: 1.5rem 0; }
 .table { width: 100%; border-collapse: collapse; background: white; }
@@ -206,6 +209,7 @@ img { max-width: 100%; }
   .hero { padding: 2rem 0; }
   section { padding: 2rem 0; }
   .audience-cards { grid-template-columns: 1fr; }
+  .ladv-frame { min-height: 620px; }
 }
 @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
 

@@ -13,3 +13,14 @@ if (toggle && menu) {
     if (event.key === 'Escape' && menu.classList.contains('open')) { closeMenu(); toggle.focus(); }
   });
 }
+
+// Every subpage offers a clear route back to the overview without relying on browser history.
+if (document.body && !document.querySelector('.home-page')) {
+  const main = document.querySelector('main');
+  if (main) {
+    const back = document.createElement('p');
+    back.className = 'back-navigation';
+    back.innerHTML = '<a href="index.html">← Zurück zur Startseite</a>';
+    main.append(back);
+  }
+}
