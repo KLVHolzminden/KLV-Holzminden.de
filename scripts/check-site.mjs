@@ -38,7 +38,12 @@ for (const p of pages) {
   visit(p);
 }
 for (const p of ['termine.json', 'vereine.json']) JSON.parse(read(p));
-for (const p of ['navigation.js', 'footer.js', 'termine.js', 'vereine.js']) new vm.Script(read(p), {filename:p});
+for (const p of ['navigation.js', 'footer.js', 'termine.js', 'vereine.js', 'engagement-finder.js']) new vm.Script(read(p), {filename:p});
+const engagementOffers = JSON.parse(read('data/engagementangebote.json'));
+assert.ok(engagementOffers.length >= 5, 'mindestens fünf Engagementangebote');
+for (const offer of engagementOffers) {
+  for (const key of ['id', 'titel', 'beschreibung', 'interessen', 'zeitmodell', 'zeitwerte', 'zeitbeschreibung', 'voraussetzungen', 'detailLink', 'kontaktperson', 'kontaktadresse', 'aktiv', 'sortierung']) assert.ok(key in offer, 'Engagementangebot ' + offer.id + ' enthält ' + key);
+}
 assert.equal((read('vereine.html').match(/<tr>/g)||[]).length, 18, '17 Vereine plus Tabellenkopf');
 assert.match(read('kontakt.html'), /forms.office.com\/e\/0injdVHfmt/);
 assert.match(read('kontakt.html'), /mailto:s.sander@ksbholzminden.de/);

@@ -12,6 +12,7 @@ HTML, CSS und JavaScript ohne Installation und ohne Build-Schritt. Vercel veröf
 - `downloads.html`: Satzung und verfügbare Listen.
 - `impressum.html`, `datenschutz.html`: vorhandene Texte statisch eingebunden.
 - `styles.css`, `navigation.js`: gemeinsames Design und mobile Navigation.
+- `foerderer.html`, `engagement-finder.js`, `data/engagementangebote.json`: interaktiver Engagement-Finder. Die Angebote werden im Browser aus der JSON-Datei gelesen; personenbezogene Eingaben werden nicht gespeichert.
 
 Header und Footer sind statisch in jeder Hauptseite vorhanden. Bei Änderungen an der Navigation alle Hauptseiten berücksichtigen. Die Navigation und die Inhalte funktionieren auch ohne JavaScript.
 
@@ -21,6 +22,9 @@ Wettkampf-PDFs, Wettkampfordnung und weitere Formulare sind im Ausgangsbestand k
 Die wiederhergestellten Vorstandsangaben tragen den vorhandenen Stand 14.11.2024; Aktualität bitte redaktionell prüfen. Impressum und Datenschutzerklärung wurden aus vorhandenen Texten wiederhergestellt, nicht rechtlich neu geprüft. Ihre inhaltliche Aktualisierung für das aktuelle Hosting und das externe Kontaktformular steht aus.
 
 `termine.json` enthält bis zur Pflege bestätigter Termine eine leere Liste. `vereine.json` und ältere Hilfsskripte sind nicht in die Website eingebunden.
+
+## Engagementangebote pflegen
+Die Angebote liegen in `data/engagementangebote.json`. Für ein neues Angebot einen Datensatz mit einer eindeutigen `id` ergänzen und mindestens Titel, Motto, Beschreibung, Interessen, Zeitmodell, Zeitwerten, Zeitbeschreibung, Voraussetzungen, Detail-Link, Kontaktperson, Kontaktadresse, `aktiv` und `sortierung` pflegen. `aktiv: false` blendet ein Angebot aus, ohne es zu löschen. Die Werte in `interessen` müssen einem der Auswahlwerte im Finder entsprechen. Für bestehende Detailseiten können Links wie `foerderer.html#kampfrichter` verwendet werden.
 
 ## Prüfung
 `node scripts/check-site.mjs` prüft interne Dateiverweise und Sprungmarken, Hauptnavigation, Seitentitel, JSON-Dateien und JavaScript-Syntax.
