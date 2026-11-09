@@ -195,6 +195,9 @@ img { max-width: 100%; }
 
 /* Engagement-Finder */
 .engagement-finder { margin: 2.5rem 0; padding: 2rem; border: 1px solid #cbd8e8; border-radius: 12px; background: #eef4fb; }
+.finder-intro { max-width: 780px; }
+.finder-intro .button { margin-top: .5rem; }
+.finder-questions { margin-top: 2rem; }
 .finder-heading { max-width: 780px; }
 .finder-heading h2, .engagement-values h2 { color: #0d47a1; margin: 0 0 .5rem; }
 .finder-subtitle { font-weight: 700; color: #c62828; font-size: 1.15rem; }
