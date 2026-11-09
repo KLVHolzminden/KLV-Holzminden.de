@@ -182,6 +182,9 @@ img { max-width: 100%; }
 .skip-link:focus { top: .5rem; }
 :focus-visible { outline: 3px solid #c62828; outline-offset: 3px; }
 .cards { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.audience-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); text-align: left; }
+.audience-cards .card { min-height: 250px; display: flex; flex-direction: column; align-items: flex-start; }
+.audience-cards .button { margin-top: auto; }
 .card h2 { font-size: 1.3rem; color: #c62828; margin-top: 0; }
 .table-scroll { max-width: 100%; overflow-x: auto; margin: 1.5rem 0; }
 .table { width: 100%; border-collapse: collapse; background: white; }
@@ -199,6 +202,7 @@ img { max-width: 100%; }
   .main-nav a { padding: .65rem 0; }
   .hero { padding: 2rem 0; }
   section { padding: 2rem 0; }
+  .audience-cards { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
 
