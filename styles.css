@@ -147,6 +147,11 @@ section {
   text-align: center;
 }
 
+/* Vereins- und Sportangebotssuche des LandesSportBunds Niedersachsen. */
+.club-finder-section { background: #eef4fb; }
+.club-finder-intro { max-width: 720px; margin: 0 auto 1.5rem; text-align: center; }
+.club-finder-note { max-width: 720px; margin: 1.5rem auto 0; padding: .85rem 1rem; border-left: 4px solid #0d47a1; background: #fff; }
+
 /* Footer */
 footer.site {
   background: #0d47a1;
